@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<MatSeg xmlns="http://tempuri.org/MatSeg.xsd">
+  <TblOficina>
+    <Nombre>s</Nombre>
+    <Codigo>0</Codigo>
+    <FechaI>27/7/2018</FechaI>
+    <FechaS>27/7/2018</FechaS>
+    <Cantidad>5</Cantidad>
+    <Precio>34</Precio>
+    <NombreR>Carlos</NombreR>
+    <PrecioT>0</PrecioT>
+  </TblOficina>
+</MatSeg>

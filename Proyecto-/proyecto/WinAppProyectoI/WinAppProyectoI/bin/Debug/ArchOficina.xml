@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<MatSeg xmlns="http://tempuri.org/MatSeg.xsd">
+  <TblOficina>
+    <Nombre>borrador</Nombre>
+    <Codigo>0</Codigo>
+    <FechaI>27/7/2018</FechaI>
+    <FechaS>27/7/2018</FechaS>
+    <Cantidad>7</Cantidad>
+    <Precio>34</Precio>
+    <NombreR>Carlos</NombreR>
+    <PrecioT>0</PrecioT>
+  </TblOficina>
+  <TblOficina>
+    <Nombre>La</Nombre>
+    <Codigo>4</Codigo>
+    <FechaI>28/7/2018</FechaI>
+    <FechaS>28/7/2018</FechaS>
+    <Cantidad>5</Cantidad>
+    <Precio>23</Precio>
+    <NombreR>Carlos</NombreR>
+    <PrecioT>0</PrecioT>
+  </TblOficina>
+  <TblOficina>
+    <Nombre />
+    <Codigo>0</Codigo>
+    <FechaI>28/7/2018</FechaI>
+    <FechaS>28/7/2018</FechaS>
+    <Cantidad />
+    <Precio />
+    <NombreR />
+    <PrecioT>0</PrecioT>
+  </TblOficina>
+  <TblOficina>
+    <Nombre>la</Nombre>
+    <Codigo>0</Codigo>
+    <FechaI>28/7/2018</FechaI>
+    <FechaS>28/7/2018</FechaS>
+    <Cantidad>6</Cantidad>
+    <Precio>12</Precio>
+    <NombreR>Carlos</NombreR>
+    <PrecioT>0</PrecioT>
+  </TblOficina>
+</MatSeg>
