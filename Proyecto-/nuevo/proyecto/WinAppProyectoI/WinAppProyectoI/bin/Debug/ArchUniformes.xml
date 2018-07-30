@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<MatSeg xmlns="http://tempuri.org/MatSeg.xsd">
+  <TblMatSeg>
+    <NombreMat>Chaleco</NombreMat>
+    <Codigo>1</Codigo>
+    <Marca>2</Marca>
+    <Modelo>12</Modelo>
+    <FechaI>36</FechaI>
+    <FechaS>Usado</FechaS>
+    <Cantidad>3/7/2018</Cantidad>
+    <Estado>24</Estado>
+  </TblMatSeg>
+  <TblMatSeg>
+    <NombreMat>sdfas</NombreMat>
+    <Codigo>2</Codigo>
+    <Marca>2</Marca>
+    <Modelo>12</Modelo>
+    <FechaI>34</FechaI>
+    <FechaS>Usado</FechaS>
+    <Cantidad>30/7/2018</Cantidad>
+    <Estado>24</Estado>
+  </TblMatSeg>
+  <TblUniformes>
+    <Nombre />
+    <Codigo>0</Codigo>
+    <Precio>3</Precio>
+    <Cantidad>2</Cantidad>
+    <Talla>Talla</Talla>
+    <Estado />
+    <NombreR>Ca</NombreR>
+    <FechaI>30/7/2018</FechaI>
+    <FechaS>28/7/2018</FechaS>
+    <PrecioT>0</PrecioT>
+  </TblUniformes>
+</MatSeg>

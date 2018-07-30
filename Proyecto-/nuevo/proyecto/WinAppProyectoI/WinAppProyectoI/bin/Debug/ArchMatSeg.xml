@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<MatSeg xmlns="http://tempuri.org/MatSeg.xsd">
+  <TblMatSeg>
+    <NombreMat>Radio</NombreMat>
+    <Codigo>1</Codigo>
+    <Marca>k-32</Marca>
+    <Modelo>12</Modelo>
+    <FechaI>30/7/2018</FechaI>
+    <Cantidad>2</Cantidad>
+    <Precio>12</Precio>
+    <Estado>Buen</Estado>
+    <PrecioTotal>24</PrecioTotal>
+  </TblMatSeg>
+  <TblMatSeg>
+    <NombreMat>Radio </NombreMat>
+    <Codigo>2</Codigo>
+    <Marca>k-23</Marca>
+    <Modelo>sd</Modelo>
+    <FechaI>30/7/2018</FechaI>
+    <Cantidad>2</Cantidad>
+    <Precio>12</Precio>
+    <Estado>Buen</Estado>
+    <PrecioTotal>24</PrecioTotal>
+  </TblMatSeg>
+</MatSeg>
