@@ -78,5 +78,24 @@ namespace WinAppProyectoI
             MatSegSalida salida = new MatSegSalida();
             salida.ShowDialog();
         }
+
+        private void BttResporte2_Click(object sender, EventArgs e)
+        {
+            ReporteMatSegF reporte = new ReporteMatSegF();
+            reporte.ShowDialog();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ReporteMatSegCantidad cantida = new ReporteMatSegCantidad();
+            cantida.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ReporteMatSegFecha fecha = new ReporteMatSegFecha();
+            fecha.ShowDialog();
+        }
     }
 }

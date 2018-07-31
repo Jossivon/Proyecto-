@@ -46,5 +46,24 @@ namespace WinAppProyectoI
             OficinaBSalida salida = new OficinaBSalida();
             salida.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ReporteOfiEstado estado = new ReporteOfiEstado();
+            estado.ShowDialog();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ReporteOfiantidad cantidad = new ReporteOfiantidad();
+            cantidad.ShowDialog();
+        }
+
+        private void BttResporte2_Click(object sender, EventArgs e)
+        {
+            ReporteOfiFecha fecha = new ReporteOfiFecha();
+            fecha.ShowDialog();
+        }
     }
 }

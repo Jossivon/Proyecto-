@@ -42,6 +42,8 @@
             this.Mazimizar = new System.Windows.Forms.PictureBox();
             this.Cerrar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.PnlIzq.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
@@ -53,6 +55,8 @@
             // 
             // PnlIzq
             // 
+            this.PnlIzq.Controls.Add(this.button2);
+            this.PnlIzq.Controls.Add(this.button1);
             this.PnlIzq.Controls.Add(this.BttResporte2);
             this.PnlIzq.Controls.Add(this.BttReporte1);
             this.PnlIzq.Controls.Add(this.BttModificar);
@@ -68,17 +72,18 @@
             // BttResporte2
             // 
             this.BttResporte2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BttResporte2.Location = new System.Drawing.Point(3, 409);
+            this.BttResporte2.Location = new System.Drawing.Point(4, 317);
             this.BttResporte2.Name = "BttResporte2";
             this.BttResporte2.Size = new System.Drawing.Size(299, 45);
             this.BttResporte2.TabIndex = 3;
-            this.BttResporte2.Text = "button2";
+            this.BttResporte2.Text = "Resporte Fecha";
             this.BttResporte2.UseVisualStyleBackColor = true;
+            this.BttResporte2.Click += new System.EventHandler(this.BttResporte2_Click);
             // 
             // BttReporte1
             // 
             this.BttReporte1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BttReporte1.Location = new System.Drawing.Point(3, 358);
+            this.BttReporte1.Location = new System.Drawing.Point(4, 266);
             this.BttReporte1.Name = "BttReporte1";
             this.BttReporte1.Size = new System.Drawing.Size(299, 45);
             this.BttReporte1.TabIndex = 4;
@@ -89,7 +94,7 @@
             // BttModificar
             // 
             this.BttModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BttModificar.Location = new System.Drawing.Point(3, 307);
+            this.BttModificar.Location = new System.Drawing.Point(4, 215);
             this.BttModificar.Name = "BttModificar";
             this.BttModificar.Size = new System.Drawing.Size(299, 45);
             this.BttModificar.TabIndex = 5;
@@ -100,7 +105,7 @@
             // BttEliminar
             // 
             this.BttEliminar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BttEliminar.Location = new System.Drawing.Point(2, 256);
+            this.BttEliminar.Location = new System.Drawing.Point(3, 164);
             this.BttEliminar.Name = "BttEliminar";
             this.BttEliminar.Size = new System.Drawing.Size(299, 45);
             this.BttEliminar.TabIndex = 6;
@@ -111,7 +116,7 @@
             // BttBuscar
             // 
             this.BttBuscar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BttBuscar.Location = new System.Drawing.Point(2, 205);
+            this.BttBuscar.Location = new System.Drawing.Point(3, 113);
             this.BttBuscar.Name = "BttBuscar";
             this.BttBuscar.Size = new System.Drawing.Size(299, 45);
             this.BttBuscar.TabIndex = 7;
@@ -122,7 +127,7 @@
             // BttIngresar
             // 
             this.BttIngresar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BttIngresar.Location = new System.Drawing.Point(3, 154);
+            this.BttIngresar.Location = new System.Drawing.Point(4, 62);
             this.BttIngresar.Name = "BttIngresar";
             this.BttIngresar.Size = new System.Drawing.Size(299, 45);
             this.BttIngresar.TabIndex = 2;
@@ -203,6 +208,28 @@
             this.Minimizar.TabStop = false;
             this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button1.Location = new System.Drawing.Point(3, 368);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(299, 45);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Reporte Estado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button2.Location = new System.Drawing.Point(4, 419);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(298, 45);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Reporte Cantida";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FrmMatSeg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,5 +266,7 @@
         private System.Windows.Forms.Button BttEliminar;
         private System.Windows.Forms.Button BttBuscar;
         private System.Windows.Forms.Button BttIngresar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

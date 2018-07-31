@@ -40,10 +40,10 @@
             // 
             this.BttBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.BttBuscar.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BttBuscar.Location = new System.Drawing.Point(326, 266);
+            this.BttBuscar.Location = new System.Drawing.Point(335, 275);
             this.BttBuscar.Name = "BttBuscar";
             this.BttBuscar.Size = new System.Drawing.Size(100, 53);
-            this.BttBuscar.TabIndex = 45;
+            this.BttBuscar.TabIndex = 49;
             this.BttBuscar.Text = "Buscar";
             this.BttBuscar.UseVisualStyleBackColor = true;
             this.BttBuscar.Click += new System.EventHandler(this.BttBuscar_Click);
@@ -52,10 +52,10 @@
             // 
             this.TxtBxCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.TxtBxCodigo.Font = new System.Drawing.Font("Colonna MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBxCodigo.Location = new System.Drawing.Point(326, 182);
+            this.TxtBxCodigo.Location = new System.Drawing.Point(335, 191);
             this.TxtBxCodigo.Name = "TxtBxCodigo";
             this.TxtBxCodigo.Size = new System.Drawing.Size(116, 30);
-            this.TxtBxCodigo.TabIndex = 44;
+            this.TxtBxCodigo.TabIndex = 48;
             this.TxtBxCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBxCodigo_KeyPress);
             // 
             // LblTxtCodigo
@@ -64,10 +64,10 @@
             this.LblTxtCodigo.AutoSize = true;
             this.LblTxtCodigo.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.LblTxtCodigo.Font = new System.Drawing.Font("Colonna MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTxtCodigo.Location = new System.Drawing.Point(222, 190);
+            this.LblTxtCodigo.Location = new System.Drawing.Point(231, 199);
             this.LblTxtCodigo.Name = "LblTxtCodigo";
             this.LblTxtCodigo.Size = new System.Drawing.Size(79, 22);
-            this.LblTxtCodigo.TabIndex = 43;
+            this.LblTxtCodigo.TabIndex = 47;
             this.LblTxtCodigo.Text = "Código";
             // 
             // LblTitulo
@@ -75,10 +75,10 @@
             this.LblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.LblTitulo.AutoSize = true;
             this.LblTitulo.Font = new System.Drawing.Font("Colonna MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitulo.Location = new System.Drawing.Point(159, 114);
+            this.LblTitulo.Location = new System.Drawing.Point(168, 123);
             this.LblTitulo.Name = "LblTitulo";
             this.LblTitulo.Size = new System.Drawing.Size(464, 28);
-            this.LblTitulo.TabIndex = 42;
+            this.LblTitulo.TabIndex = 46;
             this.LblTitulo.Text = "BUSCAR MATERIAL DE SEGURIDAD";
             // 
             // matSeg1
@@ -86,7 +86,7 @@
             this.matSeg1.DataSetName = "MatSeg";
             this.matSeg1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // BuscarSalidaMatS
+            // MatSegSalida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,8 +95,8 @@
             this.Controls.Add(this.TxtBxCodigo);
             this.Controls.Add(this.LblTxtCodigo);
             this.Controls.Add(this.LblTitulo);
-            this.Name = "BuscarSalidaMatS";
-            this.Text = "BuscarSalidaMatS";
+            this.Name = "MatSegSalida";
+            this.Text = "MatSegSalida";
             ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

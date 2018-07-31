@@ -41,6 +41,8 @@
             this.Cerrar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.Menu = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
@@ -52,6 +54,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.BttResporte2);
             this.panel1.Controls.Add(this.BttReporte1);
             this.panel1.Controls.Add(this.BttEliminar);
@@ -66,16 +70,17 @@
             // 
             // BttResporte2
             // 
-            this.BttResporte2.Location = new System.Drawing.Point(4, 370);
+            this.BttResporte2.Location = new System.Drawing.Point(4, 322);
             this.BttResporte2.Name = "BttResporte2";
             this.BttResporte2.Size = new System.Drawing.Size(299, 45);
             this.BttResporte2.TabIndex = 9;
-            this.BttResporte2.Text = "button2";
+            this.BttResporte2.Text = "Fecha";
             this.BttResporte2.UseVisualStyleBackColor = true;
+            this.BttResporte2.Click += new System.EventHandler(this.BttResporte2_Click);
             // 
             // BttReporte1
             // 
-            this.BttReporte1.Location = new System.Drawing.Point(4, 319);
+            this.BttReporte1.Location = new System.Drawing.Point(4, 271);
             this.BttReporte1.Name = "BttReporte1";
             this.BttReporte1.Size = new System.Drawing.Size(299, 45);
             this.BttReporte1.TabIndex = 10;
@@ -85,7 +90,7 @@
             // 
             // BttEliminar
             // 
-            this.BttEliminar.Location = new System.Drawing.Point(4, 268);
+            this.BttEliminar.Location = new System.Drawing.Point(4, 220);
             this.BttEliminar.Name = "BttEliminar";
             this.BttEliminar.Size = new System.Drawing.Size(299, 45);
             this.BttEliminar.TabIndex = 11;
@@ -95,7 +100,7 @@
             // 
             // BttModificar
             // 
-            this.BttModificar.Location = new System.Drawing.Point(3, 217);
+            this.BttModificar.Location = new System.Drawing.Point(3, 169);
             this.BttModificar.Name = "BttModificar";
             this.BttModificar.Size = new System.Drawing.Size(299, 45);
             this.BttModificar.TabIndex = 12;
@@ -105,7 +110,7 @@
             // 
             // BttBuscar
             // 
-            this.BttBuscar.Location = new System.Drawing.Point(3, 166);
+            this.BttBuscar.Location = new System.Drawing.Point(3, 118);
             this.BttBuscar.Name = "BttBuscar";
             this.BttBuscar.Size = new System.Drawing.Size(299, 45);
             this.BttBuscar.TabIndex = 13;
@@ -115,7 +120,7 @@
             // 
             // BttIngresar
             // 
-            this.BttIngresar.Location = new System.Drawing.Point(4, 115);
+            this.BttIngresar.Location = new System.Drawing.Point(4, 67);
             this.BttIngresar.Name = "BttIngresar";
             this.BttIngresar.Size = new System.Drawing.Size(299, 45);
             this.BttIngresar.TabIndex = 8;
@@ -176,6 +181,26 @@
             this.Menu.TabIndex = 4;
             this.Menu.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 424);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(299, 45);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Estado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(0, 373);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(299, 45);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Cantidad";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FrmUniforme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,5 +237,7 @@
         private System.Windows.Forms.PictureBox Mazimizar;
         private System.Windows.Forms.PictureBox Cerrar;
         private System.Windows.Forms.PictureBox Minimizar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

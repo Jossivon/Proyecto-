@@ -32,8 +32,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +75,12 @@
     </Compile>
     <Compile Include="MatSegBEliminar.Designer.cs">
       <DependentUpon>MatSegBEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegSalida.Designer.cs">
+      <DependentUpon>MatSegSalida.cs</DependentUpon>
     </Compile>
     <Compile Include="OficinaBEliminar.cs">
       <SubType>Form</SubType>
@@ -74,12 +105,6 @@
     </Compile>
     <Compile Include="OficinaBModificar.Designer.cs">
       <DependentUpon>OficinaBModificar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MatSegSalida.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MatSegSalida.Designer.cs">
-      <DependentUpon>MatSegSalida.cs</DependentUpon>
     </Compile>
     <Compile Include="OficinaBSalida.cs">
       <SubType>Form</SubType>
@@ -177,12 +202,6 @@
     <Compile Include="MatSegModificar.Designer.cs">
       <DependentUpon>MatSegModificar.cs</DependentUpon>
     </Compile>
-    <Compile Include="MostarMtSeg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MostarMtSeg.Designer.cs">
-      <DependentUpon>MostarMtSeg.cs</DependentUpon>
-    </Compile>
     <Compile Include="MatSegEliminar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +228,61 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteeUniFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteeUniFecha.Designer.cs">
+      <DependentUpon>ReporteeUniFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatSegCantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMatSegCantidad.Designer.cs">
+      <DependentUpon>ReporteMatSegCantidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatSegF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMatSegF.Designer.cs">
+      <DependentUpon>ReporteMatSegF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatSegFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMatSegFecha.Designer.cs">
+      <DependentUpon>ReporteMatSegFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteOfiantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteOfiantidad.Designer.cs">
+      <DependentUpon>ReporteOfiantidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteOfiEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteOfiEstado.Designer.cs">
+      <DependentUpon>ReporteOfiEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteOfiFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteOfiFecha.Designer.cs">
+      <DependentUpon>ReporteOfiFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteUniCantdad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteUniCantdad.Designer.cs">
+      <DependentUpon>ReporteUniCantdad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteuniEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteuniEstado.Designer.cs">
+      <DependentUpon>ReporteuniEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="UniformeBBuscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,8 +343,12 @@
     <Compile Include="UniformesSalida.Designer.cs">
       <DependentUpon>UniformesSalida.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FechaMS.rdlc" />
     <EmbeddedResource Include="MatSegBEliminar.resx">
       <DependentUpon>MatSegBEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegSalida.resx">
+      <DependentUpon>MatSegSalida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OficinaBEliminar.resx">
       <DependentUpon>OficinaBEliminar.cs</DependentUpon>
@@ -283,9 +361,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OficinaBModificar.resx">
       <DependentUpon>OficinaBModificar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MatSegSalida.resx">
-      <DependentUpon>MatSegSalida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OficinaBSalida.resx">
       <DependentUpon>OficinaBSalida.cs</DependentUpon>
@@ -332,9 +407,6 @@
     <EmbeddedResource Include="MatSegModificar.resx">
       <DependentUpon>MatSegModificar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MostarMtSeg.resx">
-      <DependentUpon>MostarMtSeg.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MatSegEliminar.resx">
       <DependentUpon>MatSegEliminar.cs</DependentUpon>
     </EmbeddedResource>
@@ -356,6 +428,41 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Reportecodigo.rdlc" />
+    <EmbeddedResource Include="ReporteeUniFecha.resx">
+      <DependentUpon>ReporteeUniFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMatSegCantidad.resx">
+      <DependentUpon>ReporteMatSegCantidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMatSegF.resx">
+      <DependentUpon>ReporteMatSegF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMatSegFecha.resx">
+      <DependentUpon>ReporteMatSegFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteOfiantidad.resx">
+      <DependentUpon>ReporteOfiantidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteOfiEstado.resx">
+      <DependentUpon>ReporteOfiEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteOfiFecha.resx">
+      <DependentUpon>ReporteOfiFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteUniCantdad.resx">
+      <DependentUpon>ReporteUniCantdad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteuniEstado.resx">
+      <DependentUpon>ReporteuniEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniCant.rdlc" />
+    <EmbeddedResource Include="UniEstado.rdlc" />
+    <EmbeddedResource Include="UniFecha.rdlc" />
     <EmbeddedResource Include="UniformeBBuscar.resx">
       <DependentUpon>UniformeBBuscar.cs</DependentUpon>
     </EmbeddedResource>
@@ -397,6 +504,7 @@
     <None Include="MatSeg.xss">
       <DependentUpon>MatSeg.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -409,6 +517,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

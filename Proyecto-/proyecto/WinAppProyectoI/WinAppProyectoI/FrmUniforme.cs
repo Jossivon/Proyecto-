@@ -47,5 +47,23 @@ namespace WinAppProyectoI
             UniformesBSalida salida = new UniformesBSalida();
             salida.ShowDialog();
         }
+
+        private void BttResporte2_Click(object sender, EventArgs e)
+        {
+            ReporteeUniFecha fecha = new ReporteeUniFecha();
+            fecha.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ReporteUniCantdad cantidad = new ReporteUniCantdad();
+            cantidad.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ReporteuniEstado estado = new ReporteuniEstado();
+            estado.ShowDialog();
+        }
     }
 }

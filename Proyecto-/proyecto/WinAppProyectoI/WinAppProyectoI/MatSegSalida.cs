@@ -12,38 +12,10 @@ namespace WinAppProyectoI
 {
     public partial class MatSegSalida : Form
     {
-        int cant,c,codigo;
+        int codigo;
         public MatSegSalida()
         {
             InitializeComponent();
-        }
-
-        private void TxtBxCodigo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (Char)Keys.Enter)
-            {
-                try
-                {
-                    codigo = int.Parse(TxtBxCodigo.Text);
-                    if (codigo > 0)
-                    {
-                        BttBuscar.Focus();
-                    }
-                    else
-                    {
-                        MessageBox.Show("El código debe ser mayor a cero", "¡AVISO!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
-                        TxtBxCodigo.Text = "";
-                    }
-                        
-
-                }
-
-                catch
-                {
-                    MessageBox.Show("El código debe ser un valor númerico", "¡AVISO!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
-                    TxtBxCodigo.Text = "";
-                }
-            }
         }
 
         private void BttBuscar_Click(object sender, EventArgs e)
@@ -58,11 +30,11 @@ namespace WinAppProyectoI
                 MatSegBSalida objModificar = new MatSegBSalida();
                 objModificar.LblCExis.Text = mats[0]["Cantidad"].ToString();
                 //objModificar.LblTxtFechaE.Text = mats[0]["FechaI"].ToString();
-                objModificar.dateTimePicker1.Text= mats[0]["FechaI"].ToString();
+                objModificar.dateTimePicker1.Text = mats[0]["FechaI"].ToString();
                 objModificar.DateS.MinDate = objModificar.dateTimePicker1.Value;
                 if (objModificar.ShowDialog() == DialogResult.OK)
                 {
-                    
+
                     mats[0]["FechaS"] = objModificar.DateS.Text;
                     mats[0]["NombreRes"] = objModificar.TxtBxNombreUsuario.Text;
                     mats[0]["Cantidad"] = objModificar.LblCanN.Text;
@@ -81,6 +53,34 @@ namespace WinAppProyectoI
             {
                 MessageBox.Show("No se ha encontrado ningun material de seguridad", "¡AVISO!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                 TxtBxCodigo.Text = "";
+            }
+        }
+
+        private void TxtBxCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                try
+                {
+                    codigo = int.Parse(TxtBxCodigo.Text);
+                    if (codigo > 0)
+                    {
+                        BttBuscar.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("El código debe ser mayor a cero", "¡AVISO!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                        TxtBxCodigo.Text = "";
+                    }
+
+
+                }
+
+                catch
+                {
+                    MessageBox.Show("El código debe ser un valor númerico", "¡AVISO!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                    TxtBxCodigo.Text = "";
+                }
             }
         }
     }
