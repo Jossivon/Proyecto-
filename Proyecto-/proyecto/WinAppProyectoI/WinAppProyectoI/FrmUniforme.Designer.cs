@@ -79,8 +79,9 @@
             this.BttReporte1.Name = "BttReporte1";
             this.BttReporte1.Size = new System.Drawing.Size(299, 45);
             this.BttReporte1.TabIndex = 10;
-            this.BttReporte1.Text = "button3";
+            this.BttReporte1.Text = "Salida";
             this.BttReporte1.UseVisualStyleBackColor = true;
+            this.BttReporte1.Click += new System.EventHandler(this.BttReporte1_Click);
             // 
             // BttEliminar
             // 

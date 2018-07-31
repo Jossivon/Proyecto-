@@ -209,6 +209,66 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UniformeBBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformeBBuscar.Designer.cs">
+      <DependentUpon>UniformeBBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformeEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformeEliminar.Designer.cs">
+      <DependentUpon>UniformeEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesBEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesBEliminar.Designer.cs">
+      <DependentUpon>UniformesBEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesBModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesBModificar.Designer.cs">
+      <DependentUpon>UniformesBModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesBSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesBSalida.Designer.cs">
+      <DependentUpon>UniformesBSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesCodigo.Designer.cs">
+      <DependentUpon>UniformesCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesIngresar.Designer.cs">
+      <DependentUpon>UniformesIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesModificar.Designer.cs">
+      <DependentUpon>UniformesModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesMostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesMostrar.Designer.cs">
+      <DependentUpon>UniformesMostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesSalida.Designer.cs">
+      <DependentUpon>UniformesSalida.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MatSegBEliminar.resx">
       <DependentUpon>MatSegBEliminar.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +356,36 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UniformeBBuscar.resx">
+      <DependentUpon>UniformeBBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformeEliminar.resx">
+      <DependentUpon>UniformeEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesBEliminar.resx">
+      <DependentUpon>UniformesBEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesBModificar.resx">
+      <DependentUpon>UniformesBModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesBSalida.resx">
+      <DependentUpon>UniformesBSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesCodigo.resx">
+      <DependentUpon>UniformesCodigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesIngresar.resx">
+      <DependentUpon>UniformesIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesModificar.resx">
+      <DependentUpon>UniformesModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesMostrar.resx">
+      <DependentUpon>UniformesMostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesSalida.resx">
+      <DependentUpon>UniformesSalida.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="MatSeg.xsc">
       <DependentUpon>MatSeg.xsd</DependentUpon>
     </None>

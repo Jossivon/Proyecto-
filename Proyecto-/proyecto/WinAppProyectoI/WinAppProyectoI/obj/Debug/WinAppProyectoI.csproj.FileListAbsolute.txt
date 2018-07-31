@@ -48,3 +48,13 @@ D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.OficinaBus
 D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.OficinaEliminar.resources
 D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.OficinaMostrar.resources
 D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.OficinaModificar.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformesIngresar.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformesCodigo.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformesBSalida.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformesSalida.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformeBBuscar.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformesMostrar.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformeEliminar.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformesBEliminar.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformesBModificar.resources
+D:\proyecto\WinAppProyectoI\WinAppProyectoI\obj\Debug\WinAppProyectoI.UniformesModificar.resources
