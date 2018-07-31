@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMatSeg));
             this.PnlIzq = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.BttResporte2 = new System.Windows.Forms.Button();
             this.BttReporte1 = new System.Windows.Forms.Button();
             this.BttModificar = new System.Windows.Forms.Button();
@@ -42,8 +44,6 @@
             this.Mazimizar = new System.Windows.Forms.PictureBox();
             this.Cerrar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.PnlIzq.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
@@ -55,6 +55,7 @@
             // 
             // PnlIzq
             // 
+            this.PnlIzq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlIzq.BackgroundImage")));
             this.PnlIzq.Controls.Add(this.button2);
             this.PnlIzq.Controls.Add(this.button1);
             this.PnlIzq.Controls.Add(this.BttResporte2);
@@ -69,9 +70,34 @@
             this.PnlIzq.Size = new System.Drawing.Size(305, 532);
             this.PnlIzq.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(4, 419);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(298, 45);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Reporte Cantidad";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(3, 368);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(299, 45);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Reporte Estado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // BttResporte2
             // 
             this.BttResporte2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttResporte2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BttResporte2.Location = new System.Drawing.Point(4, 317);
             this.BttResporte2.Name = "BttResporte2";
             this.BttResporte2.Size = new System.Drawing.Size(299, 45);
@@ -83,6 +109,7 @@
             // BttReporte1
             // 
             this.BttReporte1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttReporte1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BttReporte1.Location = new System.Drawing.Point(4, 266);
             this.BttReporte1.Name = "BttReporte1";
             this.BttReporte1.Size = new System.Drawing.Size(299, 45);
@@ -94,6 +121,7 @@
             // BttModificar
             // 
             this.BttModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttModificar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BttModificar.Location = new System.Drawing.Point(4, 215);
             this.BttModificar.Name = "BttModificar";
             this.BttModificar.Size = new System.Drawing.Size(299, 45);
@@ -105,6 +133,7 @@
             // BttEliminar
             // 
             this.BttEliminar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttEliminar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BttEliminar.Location = new System.Drawing.Point(3, 164);
             this.BttEliminar.Name = "BttEliminar";
             this.BttEliminar.Size = new System.Drawing.Size(299, 45);
@@ -116,6 +145,7 @@
             // BttBuscar
             // 
             this.BttBuscar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttBuscar.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BttBuscar.Location = new System.Drawing.Point(3, 113);
             this.BttBuscar.Name = "BttBuscar";
             this.BttBuscar.Size = new System.Drawing.Size(299, 45);
@@ -127,6 +157,7 @@
             // BttIngresar
             // 
             this.BttIngresar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttIngresar.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BttIngresar.Location = new System.Drawing.Point(4, 62);
             this.BttIngresar.Name = "BttIngresar";
             this.BttIngresar.Size = new System.Drawing.Size(299, 45);
@@ -152,7 +183,7 @@
             // 
             this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(484, 7);
+            this.Restaurar.Location = new System.Drawing.Point(546, 7);
             this.Restaurar.Name = "Restaurar";
             this.Restaurar.Size = new System.Drawing.Size(25, 25);
             this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,32 +239,11 @@
             this.Minimizar.TabStop = false;
             this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button1.Location = new System.Drawing.Point(3, 368);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(299, 45);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Reporte Estado";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button2.Location = new System.Drawing.Point(4, 419);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(298, 45);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Reporte Cantida";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // FrmMatSeg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(913, 532);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PnlIzq);

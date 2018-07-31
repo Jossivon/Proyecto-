@@ -193,7 +193,7 @@
             this.CmBxEstado.Size = new System.Drawing.Size(116, 29);
             this.CmBxEstado.TabIndex = 53;
             this.CmBxEstado.Text = "ESTADO";
-            this.CmBxEstado.Validated += new System.EventHandler(this.CmBxEstado_Validated);
+            this.CmBxEstado.ValueMemberChanged += new System.EventHandler(this.CmBxEstado_ValueMemberChanged);
             // 
             // TxtBxNombre
             // 
@@ -335,10 +335,11 @@
             this.LblPrecioT.TabIndex = 77;
             this.LblPrecioT.Text = "Precio Total";
             // 
-            // FrmIngresarMatS
+            // MatSegIngresar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1034, 518);
             this.Controls.Add(this.LblPrecioT);
             this.Controls.Add(this.LblTctPrecio);
@@ -361,7 +362,7 @@
             this.Controls.Add(this.LblTxtNombre);
             this.Controls.Add(this.LblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmIngresarMatS";
+            this.Name = "MatSegIngresar";
             this.Text = "FrmIngresarMatS";
             ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).EndInit();
             this.panel1.ResumeLayout(false);

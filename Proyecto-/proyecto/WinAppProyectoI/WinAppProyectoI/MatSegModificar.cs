@@ -99,26 +99,7 @@ namespace WinAppProyectoI
             CmBxEstado.Focus();
         }
 
-        private void CmBxEstado_Validated(object sender, EventArgs e)
-        {
-            try
-            {
-                estado = CmBxEstado.SelectedItem.ToString();
-                if (estado == "")
-                {
-                    MessageBox.Show("No se ha seleccionado ningun dato", "¡Atencion!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    CmBxEstado.Focus();
-                }
-                else
-                    TxtBxNombreUsuario.Focus();
-            }
-            catch
-            {
-                MessageBox.Show("Valores mal ingresados, seleccione los valores en la flecha", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                CmBxEstado.Text = "";
-            }
-        }
-
+       
         private void Restaurar_Click(object sender, EventArgs e)
         {
 
@@ -142,6 +123,26 @@ namespace WinAppProyectoI
             this.WindowState = FormWindowState.Maximized;
             Mazimizar.Visible = false;
             Restaurar.Visible = true;
+        }
+
+        private void CmBxEstado_ValueMemberChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                estado = CmBxEstado.SelectedItem.ToString();
+                if (estado == "")
+                {
+                    MessageBox.Show("No se ha seleccionado ningun dato", "¡Atencion!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    CmBxEstado.Focus();
+                }
+                else
+                    TxtBxNombreUsuario.Focus();
+            }
+            catch
+            {
+                MessageBox.Show("Valores mal ingresados, seleccione los valores en la flecha", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CmBxEstado.Text = "";
+            }
         }
 
         private void TxtBxNombreUsuario_KeyPress(object sender, KeyPressEventArgs e)

@@ -41,6 +41,7 @@
             this.BttGuardar = new System.Windows.Forms.Button();
             this.LblTxtC = new System.Windows.Forms.Label();
             this.LblC = new System.Windows.Forms.Label();
+            this.LblTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TxtBxCantidad
@@ -184,11 +185,24 @@
             this.LblC.TabIndex = 100;
             this.LblC.Text = "Cantidad";
             // 
+            // LblTitulo
+            // 
+            this.LblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.LblTitulo.AutoSize = true;
+            this.LblTitulo.Font = new System.Drawing.Font("Colonna MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitulo.Location = new System.Drawing.Point(228, 41);
+            this.LblTitulo.Name = "LblTitulo";
+            this.LblTitulo.Size = new System.Drawing.Size(336, 28);
+            this.LblTitulo.TabIndex = 101;
+            this.LblTitulo.Text = "MATERIALES DE OFICINA";
+            // 
             // OficinaSalida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblTitulo);
             this.Controls.Add(this.LblC);
             this.Controls.Add(this.LblTxtC);
             this.Controls.Add(this.BttGuardar);
@@ -224,5 +238,6 @@
         private System.Windows.Forms.Button BttGuardar;
         private System.Windows.Forms.Label LblTxtC;
         public System.Windows.Forms.Label LblC;
+        private System.Windows.Forms.Label LblTitulo;
     }
 }

@@ -24,4 +24,28 @@
     <Estado>Buen</Estado>
     <PrecioTotal>24</PrecioTotal>
   </TblMatSeg>
+  <TblMatSeg>
+    <NombreMat>Radio </NombreMat>
+    <Codigo>3</Codigo>
+    <Marca>k-30</Marca>
+    <Modelo>S-18</Modelo>
+    <FechaI>11/7/2018</FechaI>
+    <FechaS>27/7/2018</FechaS>
+    <NombreRes>Carlos</NombreRes>
+    <Cantidad>1</Cantidad>
+    <Precio>60,80</Precio>
+    <Estado>Bueno</Estado>
+    <PrecioTotal>182,4</PrecioTotal>
+  </TblMatSeg>
+  <TblMatSeg>
+    <NombreMat>Radio </NombreMat>
+    <Codigo>4</Codigo>
+    <Marca>k-23</Marca>
+    <Modelo>S-12</Modelo>
+    <FechaI>31/7/2018</FechaI>
+    <Cantidad>2</Cantidad>
+    <Precio>70,34</Precio>
+    <Estado>Buen</Estado>
+    <PrecioTotal>140,68</PrecioTotal>
+  </TblMatSeg>
 </MatSeg>

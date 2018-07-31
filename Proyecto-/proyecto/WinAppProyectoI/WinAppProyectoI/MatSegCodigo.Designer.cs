@@ -75,16 +75,17 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "SE HA GUARDADO CON EL CÓDIGO";
             // 
-            // Codigo
+            // MatSegCodigo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(440, 296);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BttAceptar);
             this.Controls.Add(this.LblCodigo);
             this.Controls.Add(this.LblTxtTitulo);
-            this.Name = "Codigo";
+            this.Name = "MatSegCodigo";
             this.Text = "Codigo";
             this.ResumeLayout(false);
             this.PerformLayout();

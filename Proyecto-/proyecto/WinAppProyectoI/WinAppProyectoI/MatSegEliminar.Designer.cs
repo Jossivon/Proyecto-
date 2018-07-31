@@ -67,13 +67,15 @@
             // BttEliminar
             // 
             this.BttEliminar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BttEliminar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BttEliminar.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttEliminar.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.BttEliminar.Location = new System.Drawing.Point(383, 413);
             this.BttEliminar.Name = "BttEliminar";
             this.BttEliminar.Size = new System.Drawing.Size(133, 57);
             this.BttEliminar.TabIndex = 91;
             this.BttEliminar.Text = "ELIMINAR";
-            this.BttEliminar.UseVisualStyleBackColor = true;
+            this.BttEliminar.UseVisualStyleBackColor = false;
             this.BttEliminar.Click += new System.EventHandler(this.BttEliminar_Click);
             // 
             // LblTitulo
@@ -312,13 +314,15 @@
             // BttCancelar
             // 
             this.BttCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BttCancelar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BttCancelar.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BttCancelar.Location = new System.Drawing.Point(580, 413);
             this.BttCancelar.Name = "BttCancelar";
             this.BttCancelar.Size = new System.Drawing.Size(133, 57);
             this.BttCancelar.TabIndex = 148;
             this.BttCancelar.Text = "CANCELAR";
-            this.BttCancelar.UseVisualStyleBackColor = true;
+            this.BttCancelar.UseVisualStyleBackColor = false;
             this.BttCancelar.Click += new System.EventHandler(this.BttCancelar_Click);
             // 
             // panel1
@@ -386,6 +390,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1053, 501);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BttCancelar);

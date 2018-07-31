@@ -54,13 +54,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Restaurar = new System.Windows.Forms.PictureBox();
             this.Mazimizar = new System.Windows.Forms.PictureBox();
-            this.Cerrar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
+            this.Cerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Mazimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // LblFechaS
@@ -335,18 +335,6 @@
             this.Mazimizar.TabStop = false;
             this.Mazimizar.Click += new System.EventHandler(this.Mazimizar_Click);
             // 
-            // Cerrar
-            // 
-            this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
-            this.Cerrar.Location = new System.Drawing.Point(952, 7);
-            this.Cerrar.Name = "Cerrar";
-            this.Cerrar.Size = new System.Drawing.Size(25, 25);
-            this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Cerrar.TabIndex = 132;
-            this.Cerrar.TabStop = false;
-            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
-            // 
             // Minimizar
             // 
             this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -359,10 +347,23 @@
             this.Minimizar.TabStop = false;
             this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
             // 
-            // MostrarMatS
+            // Cerrar
+            // 
+            this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
+            this.Cerrar.Location = new System.Drawing.Point(952, 7);
+            this.Cerrar.Name = "Cerrar";
+            this.Cerrar.Size = new System.Drawing.Size(25, 25);
+            this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Cerrar.TabIndex = 132;
+            this.Cerrar.TabStop = false;
+            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
+            // 
+            // MatSegMostrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(982, 504);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblFechaS);
@@ -388,13 +389,13 @@
             this.Controls.Add(this.LblTxtNombre);
             this.Controls.Add(this.LblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MostrarMatS";
+            this.Name = "MatSegMostrar";
             this.Text = "MostrarMatS";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Mazimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

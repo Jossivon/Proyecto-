@@ -163,12 +163,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BttBuscar);
             this.Controls.Add(this.TxtBxCodigo);
             this.Controls.Add(this.LblTxtCodigo);
             this.Controls.Add(this.LblTitulo);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MatSegBuscar";
             this.Text = "BuscarMatS";

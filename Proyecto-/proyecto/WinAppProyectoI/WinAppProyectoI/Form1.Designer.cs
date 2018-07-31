@@ -40,6 +40,7 @@
             this.Cerrar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.Menu = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PnlIzq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Ayuda)).BeginInit();
             this.PnlTitulo.SuspendLayout();
@@ -48,10 +49,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Menu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlIzq
             // 
+            this.PnlIzq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlIzq.BackgroundImage")));
+            this.PnlIzq.Controls.Add(this.pictureBox1);
             this.PnlIzq.Controls.Add(this.Ayuda);
             this.PnlIzq.Controls.Add(this.BttUtil);
             this.PnlIzq.Controls.Add(this.BttUniformes);
@@ -65,49 +69,59 @@
             // Ayuda
             // 
             this.Ayuda.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Ayuda.Location = new System.Drawing.Point(241, 457);
+            this.Ayuda.Image = ((System.Drawing.Image)(resources.GetObject("Ayuda.Image")));
+            this.Ayuda.Location = new System.Drawing.Point(232, 485);
             this.Ayuda.Name = "Ayuda";
             this.Ayuda.Size = new System.Drawing.Size(48, 39);
+            this.Ayuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ayuda.TabIndex = 2;
             this.Ayuda.TabStop = false;
             // 
             // BttUtil
             // 
             this.BttUtil.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttUtil.BackColor = System.Drawing.Color.SteelBlue;
+            this.BttUtil.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttUtil.ForeColor = System.Drawing.SystemColors.ControlText;
             this.BttUtil.Image = ((System.Drawing.Image)(resources.GetObject("BttUtil.Image")));
             this.BttUtil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BttUtil.Location = new System.Drawing.Point(12, 297);
+            this.BttUtil.Location = new System.Drawing.Point(3, 277);
             this.BttUtil.Name = "BttUtil";
-            this.BttUtil.Size = new System.Drawing.Size(277, 44);
+            this.BttUtil.Size = new System.Drawing.Size(302, 63);
             this.BttUtil.TabIndex = 4;
             this.BttUtil.Text = "Materiales de oficina";
-            this.BttUtil.UseVisualStyleBackColor = true;
+            this.BttUtil.UseVisualStyleBackColor = false;
             this.BttUtil.Click += new System.EventHandler(this.BttUtil_Click);
             // 
             // BttUniformes
             // 
             this.BttUniformes.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttUniformes.BackColor = System.Drawing.Color.SteelBlue;
+            this.BttUniformes.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttUniformes.ForeColor = System.Drawing.SystemColors.ControlText;
             this.BttUniformes.Image = ((System.Drawing.Image)(resources.GetObject("BttUniformes.Image")));
             this.BttUniformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BttUniformes.Location = new System.Drawing.Point(12, 357);
+            this.BttUniformes.Location = new System.Drawing.Point(3, 359);
             this.BttUniformes.Name = "BttUniformes";
-            this.BttUniformes.Size = new System.Drawing.Size(277, 45);
+            this.BttUniformes.Size = new System.Drawing.Size(302, 67);
             this.BttUniformes.TabIndex = 3;
             this.BttUniformes.Text = "Uniformes";
-            this.BttUniformes.UseVisualStyleBackColor = true;
+            this.BttUniformes.UseVisualStyleBackColor = false;
             this.BttUniformes.Click += new System.EventHandler(this.BttUniformes_Click);
             // 
             // BttMatSeg
             // 
             this.BttMatSeg.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BttMatSeg.BackColor = System.Drawing.Color.SteelBlue;
+            this.BttMatSeg.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BttMatSeg.Image = ((System.Drawing.Image)(resources.GetObject("BttMatSeg.Image")));
             this.BttMatSeg.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BttMatSeg.Location = new System.Drawing.Point(12, 230);
+            this.BttMatSeg.Location = new System.Drawing.Point(3, 194);
             this.BttMatSeg.Name = "BttMatSeg";
-            this.BttMatSeg.Size = new System.Drawing.Size(277, 44);
+            this.BttMatSeg.Size = new System.Drawing.Size(302, 61);
             this.BttMatSeg.TabIndex = 2;
             this.BttMatSeg.Text = "Materiales de Seguridad";
-            this.BttMatSeg.UseVisualStyleBackColor = true;
+            this.BttMatSeg.UseVisualStyleBackColor = false;
             this.BttMatSeg.Click += new System.EventHandler(this.BttMatSeg_Click);
             // 
             // PnlTitulo
@@ -183,16 +197,28 @@
             this.Menu.TabStop = false;
             this.Menu.Click += new System.EventHandler(this.Menu_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(305, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(903, 536);
             this.Controls.Add(this.PnlTitulo);
             this.Controls.Add(this.PnlIzq);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.PnlIzq.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Ayuda)).EndInit();
             this.PnlTitulo.ResumeLayout(false);
@@ -201,6 +227,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Menu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -218,6 +245,7 @@
         private System.Windows.Forms.PictureBox Ayuda;
         private System.Windows.Forms.PictureBox Restaurar;
         private System.Windows.Forms.PictureBox Maximizar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

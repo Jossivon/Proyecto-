@@ -65,5 +65,37 @@ namespace WinAppProyectoI
             ReporteOfiFecha fecha = new ReporteOfiFecha();
             fecha.ShowDialog();
         }
+
+        private void Minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Maximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            Maximizar.Visible = false;
+            Restaurar.Visible = true;
+        }
+
+        private void Restaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            Restaurar.Visible = false;
+            Maximizar.Visible = true;
+        }
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Menu_Click(object sender, EventArgs e)
+        {
+            if (panel1.Width == 250)
+                panel1.Width = 70;
+            else
+                panel1.Width = 250;
+        }
     }
 }
