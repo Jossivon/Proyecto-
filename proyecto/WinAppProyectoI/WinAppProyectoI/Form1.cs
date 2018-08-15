@@ -89,7 +89,7 @@ namespace WinAppProyectoI
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            LblTxtF.Text = DateTime.Now.ToShortTimeString();
+            
         }
 
        

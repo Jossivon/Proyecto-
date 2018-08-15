@@ -52,5 +52,37 @@ namespace WinAppProyectoI
             EmpListaR lista = new EmpListaR();
             lista.ShowDialog();
         }
+
+        private void Menu_Click(object sender, EventArgs e)
+        {
+            if (PnlIzq.Width == 250)
+                PnlIzq.Width = 70;
+            else
+                PnlIzq.Width = 250;
+        }
+
+        private void Minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Restaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            Restaurar.Visible = false;
+            Mazimizar.Visible = true;
+        }
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Mazimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            Mazimizar.Visible = false;
+            Restaurar.Visible = true;
+        }
     }
 }

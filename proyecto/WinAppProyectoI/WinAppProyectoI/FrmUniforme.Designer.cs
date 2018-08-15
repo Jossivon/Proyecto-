@@ -45,8 +45,9 @@
             this.Maximizar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.Cerrar = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
@@ -54,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,27 +74,31 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(305, 529);
+            this.panel1.Size = new System.Drawing.Size(50, 529);
             this.panel1.TabIndex = 0;
             // 
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button3.Font = new System.Drawing.Font("Cooper Black", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = global::WinAppProyectoI.Properties.Resources.ver;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(4, 97);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(299, 45);
+            this.button3.Size = new System.Drawing.Size(245, 45);
             this.button3.TabIndex = 11;
-            this.button3.Text = "Mostrar datos ingresados";
+            this.button3.Text = "Mostrar datos ";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::WinAppProyectoI.Properties.Resources.lista1;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(5, 401);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(299, 45);
+            this.button2.Size = new System.Drawing.Size(245, 45);
             this.button2.TabIndex = 15;
             this.button2.Text = "Reporte Cantidad";
             this.button2.UseVisualStyleBackColor = true;
@@ -101,9 +107,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::WinAppProyectoI.Properties.Resources.lista;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(4, 452);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(299, 45);
+            this.button1.Size = new System.Drawing.Size(245, 45);
             this.button1.TabIndex = 14;
             this.button1.Text = "Reporte Estado";
             this.button1.UseVisualStyleBackColor = true;
@@ -112,9 +120,11 @@
             // BttResporte2
             // 
             this.BttResporte2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttResporte2.Image = global::WinAppProyectoI.Properties.Resources.lista;
+            this.BttResporte2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BttResporte2.Location = new System.Drawing.Point(5, 350);
             this.BttResporte2.Name = "BttResporte2";
-            this.BttResporte2.Size = new System.Drawing.Size(299, 45);
+            this.BttResporte2.Size = new System.Drawing.Size(245, 45);
             this.BttResporte2.TabIndex = 9;
             this.BttResporte2.Text = "Reporte Fecha";
             this.BttResporte2.UseVisualStyleBackColor = true;
@@ -123,9 +133,11 @@
             // BttReporte1
             // 
             this.BttReporte1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttReporte1.Image = global::WinAppProyectoI.Properties.Resources.sl;
+            this.BttReporte1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BttReporte1.Location = new System.Drawing.Point(5, 299);
             this.BttReporte1.Name = "BttReporte1";
-            this.BttReporte1.Size = new System.Drawing.Size(299, 45);
+            this.BttReporte1.Size = new System.Drawing.Size(245, 45);
             this.BttReporte1.TabIndex = 10;
             this.BttReporte1.Text = "Salida";
             this.BttReporte1.UseVisualStyleBackColor = true;
@@ -134,9 +146,11 @@
             // BttEliminar
             // 
             this.BttEliminar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttEliminar.Image = global::WinAppProyectoI.Properties.Resources.eli;
+            this.BttEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BttEliminar.Location = new System.Drawing.Point(5, 248);
             this.BttEliminar.Name = "BttEliminar";
-            this.BttEliminar.Size = new System.Drawing.Size(299, 45);
+            this.BttEliminar.Size = new System.Drawing.Size(245, 45);
             this.BttEliminar.TabIndex = 11;
             this.BttEliminar.Text = "Eliminar";
             this.BttEliminar.UseVisualStyleBackColor = true;
@@ -145,9 +159,11 @@
             // BttModificar
             // 
             this.BttModificar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttModificar.Image = global::WinAppProyectoI.Properties.Resources.m;
+            this.BttModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BttModificar.Location = new System.Drawing.Point(4, 197);
             this.BttModificar.Name = "BttModificar";
-            this.BttModificar.Size = new System.Drawing.Size(299, 45);
+            this.BttModificar.Size = new System.Drawing.Size(245, 45);
             this.BttModificar.TabIndex = 12;
             this.BttModificar.Text = "Modificar";
             this.BttModificar.UseVisualStyleBackColor = true;
@@ -156,9 +172,11 @@
             // BttBuscar
             // 
             this.BttBuscar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttBuscar.Image = global::WinAppProyectoI.Properties.Resources.bus;
+            this.BttBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BttBuscar.Location = new System.Drawing.Point(4, 146);
             this.BttBuscar.Name = "BttBuscar";
-            this.BttBuscar.Size = new System.Drawing.Size(299, 45);
+            this.BttBuscar.Size = new System.Drawing.Size(245, 45);
             this.BttBuscar.TabIndex = 13;
             this.BttBuscar.Text = "Buscar";
             this.BttBuscar.UseVisualStyleBackColor = true;
@@ -167,9 +185,11 @@
             // BttIngresar
             // 
             this.BttIngresar.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BttIngresar.Location = new System.Drawing.Point(5, 47);
+            this.BttIngresar.Image = global::WinAppProyectoI.Properties.Resources.ingresar;
+            this.BttIngresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BttIngresar.Location = new System.Drawing.Point(4, 47);
             this.BttIngresar.Name = "BttIngresar";
-            this.BttIngresar.Size = new System.Drawing.Size(299, 45);
+            this.BttIngresar.Size = new System.Drawing.Size(245, 45);
             this.BttIngresar.TabIndex = 8;
             this.BttIngresar.Text = "Ingresar Datos";
             this.BttIngresar.UseVisualStyleBackColor = true;
@@ -183,16 +203,16 @@
             this.panel2.Controls.Add(this.Minimizar);
             this.panel2.Controls.Add(this.Cerrar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(305, 0);
+            this.panel2.Location = new System.Drawing.Point(50, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(591, 40);
+            this.panel2.Size = new System.Drawing.Size(911, 40);
             this.panel2.TabIndex = 1;
             // 
             // Restaurar
             // 
             this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(530, 8);
+            this.Restaurar.Location = new System.Drawing.Point(850, 8);
             this.Restaurar.Name = "Restaurar";
             this.Restaurar.Size = new System.Drawing.Size(25, 25);
             this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -216,7 +236,7 @@
             // 
             this.Maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
-            this.Maximizar.Location = new System.Drawing.Point(530, 8);
+            this.Maximizar.Location = new System.Drawing.Point(850, 8);
             this.Maximizar.Name = "Maximizar";
             this.Maximizar.Size = new System.Drawing.Size(25, 25);
             this.Maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -228,7 +248,7 @@
             // 
             this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(499, 8);
+            this.Minimizar.Location = new System.Drawing.Point(819, 8);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(25, 25);
             this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -240,7 +260,7 @@
             // 
             this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
-            this.Cerrar.Location = new System.Drawing.Point(561, 8);
+            this.Cerrar.Location = new System.Drawing.Point(881, 8);
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.Size = new System.Drawing.Size(25, 25);
             this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -248,34 +268,43 @@
             this.Cerrar.TabStop = false;
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
-            // label1
+            // panel3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Small", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(486, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 48);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "UNIFORMES";
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(50, 40);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(911, 489);
+            this.panel3.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(446, 170);
+            this.pictureBox1.Location = new System.Drawing.Point(147, 135);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(309, 292);
+            this.pictureBox1.Size = new System.Drawing.Size(405, 297);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Sitka Small", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(235, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(234, 48);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "UNIFORMES";
             // 
             // FrmUniforme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(896, 529);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(961, 529);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -288,9 +317,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -312,7 +342,8 @@
         private System.Windows.Forms.PictureBox Minimizar;
         private System.Windows.Forms.PictureBox Cerrar;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

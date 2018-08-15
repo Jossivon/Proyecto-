@@ -93,7 +93,7 @@ namespace WinAppProyectoI
         private void Menu_Click(object sender, EventArgs e)
         {
             if (panel1.Width == 250)
-                panel1.Width = 70;
+                panel1.Width = 52;
             else
                 panel1.Width = 250;
         }

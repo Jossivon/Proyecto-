@@ -32,7 +32,8 @@ namespace WinAppProyectoI
         private void Menu_Click(object sender, EventArgs e)
         {
             if (PnlIzq.Width == 250)
-                PnlIzq.Width = 70;
+                PnlIzq.Width = 43;
+
             else
                 PnlIzq.Width = 250;
         }
