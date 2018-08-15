@@ -226,21 +226,36 @@ namespace WinAppProyectoI
                 matseg[7] = Date.Text;
                 matseg[9] = LblPrecioT.Text;
 
-                LblCodigo.Text = matSeg1.TblUniformes.Rows.Count.ToString();
-                agregar = int.Parse(LblCodigo.Text);
-                agregar++;
-                LblCodigo.Text = agregar.ToString();
-                UniformesCodigo mostrarCodigo = new UniformesCodigo();
-                mostrarCodigo.LblCodigo.Text = agregar.ToString();
-                matSeg1.TblUniformes.Rows.Add(matseg);
-                matSeg1.WriteXml(Application.StartupPath + "\\ArchUniformes.xml");
-                this.Hide();
-                mostrarCodigo.ShowDialog();
-                if (mostrarCodigo.DialogResult == DialogResult.OK)
-                {
+                System.Data.DataRow[] talla;
+                System.Data.DataRow[] nombre;
 
-                    MessageBox.Show("Se ha guardado exitosamente", "AVISO", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                talla = matSeg1.TblUniformes.Select("Talla='" + CbxTalla.Text + "'");
+                nombre = matSeg1.TblUniformes.Select("Nombre='" + TxtBxNombre.Text + "'");
+
+                if (talla.Length > 0 && nombre.Length > 0)
+                {
+                    MessageBox.Show("El Uniforme ya existe solo se puede modificar", "ALERTA", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    this.Close();
                 }
+                else
+                {
+                    LblCodigo.Text = matSeg1.TblUniformes.Rows.Count.ToString();
+                    agregar = int.Parse(LblCodigo.Text);
+                    agregar++;
+                    LblCodigo.Text = agregar.ToString();
+                    UniformesCodigo mostrarCodigo = new UniformesCodigo();
+                    mostrarCodigo.LblCodigo.Text = agregar.ToString();
+                    matSeg1.TblUniformes.Rows.Add(matseg);
+                    matSeg1.WriteXml(Application.StartupPath + "\\ArchUniformes.xml");
+                    this.Hide();
+                    mostrarCodigo.ShowDialog();
+                    if (mostrarCodigo.DialogResult == DialogResult.OK)
+                    {
+
+                        MessageBox.Show("Se ha guardado exitosamente", "AVISO", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                    }
+                }
+                
 
             }
         }

@@ -87,21 +87,40 @@ namespace WinAppProyectoI
                 matseg[9] = CmBxEstado.Text;
                 matseg[10] = cant * precio;
     
-                LblTxtCodigo.Text = matSeg1.TblMatSeg.Rows.Count.ToString();
-                mostrar= matSeg1.TblMatSeg.Rows.Count;
-                agregar = int.Parse(LblTxtCodigo.Text);
-                agregar++;
-                LblTxtCodigo.Text = agregar.ToString();
-                MatSegCodigo mostrarCodigo = new MatSegCodigo();
-                mostrarCodigo.LblCodigo.Text = agregar.ToString();
-                matSeg1.TblMatSeg.Rows.Add(matseg);
-                matSeg1.WriteXml(Application.StartupPath + "\\ArchMatSeg.xml");
-                this.Hide();
-                mostrarCodigo.ShowDialog();
-                if (mostrarCodigo.DialogResult == DialogResult.OK)
+                
+
+                System.Data.DataRow[] nombre;
+                System.Data.DataRow[] marca;
+                System.Data.DataRow[] modelo;
+                nombre = matSeg1.TblMatSeg.Select("NombreMat='" + TxtBxNombre.Text + "'");
+                marca = matSeg1.TblMatSeg.Select("Marca='" + CmbBxMarca.Text + "'");
+                modelo = matSeg1.TblMatSeg.Select("Modelo='" + TxtBxModelo.Text + "'");
+                if (nombre.Length > 0 && marca.Length>0 && modelo.Length>0)
                 {
-                    MessageBox.Show("Se ha guardado exitosamente", "AVISO", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                    MessageBox.Show("El Material de seguridad ya existe solo se puede modificar", "ALERTA", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    this.Close();
                 }
+                else
+                {
+                    LblTxtCodigo.Text = matSeg1.TblMatSeg.Rows.Count.ToString();
+                    mostrar = matSeg1.TblMatSeg.Rows.Count;
+                    agregar = int.Parse(LblTxtCodigo.Text);
+                    agregar++;
+                    LblTxtCodigo.Text = agregar.ToString();
+                    MatSegCodigo mostrarCodigo = new MatSegCodigo();
+                    mostrarCodigo.LblCodigo.Text = agregar.ToString();
+                    matSeg1.TblMatSeg.Rows.Add(matseg);
+                    matSeg1.WriteXml(Application.StartupPath + "\\ArchMatSeg.xml");
+                    this.Hide();
+                    mostrarCodigo.ShowDialog();
+                    if (mostrarCodigo.DialogResult == DialogResult.OK)
+                    {
+                        MessageBox.Show("Se ha guardado exitosamente", "AVISO", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                    }
+                }
+                
+
+
             }
         }
 

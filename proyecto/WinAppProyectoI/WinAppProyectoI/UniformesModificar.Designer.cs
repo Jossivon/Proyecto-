@@ -55,6 +55,8 @@
             this.LblApellido = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
+            this.LblCantS = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +86,7 @@
             // 
             this.LblPrecioT.AutoSize = true;
             this.LblPrecioT.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPrecioT.Location = new System.Drawing.Point(674, 302);
+            this.LblPrecioT.Location = new System.Drawing.Point(674, 333);
             this.LblPrecioT.Name = "LblPrecioT";
             this.LblPrecioT.Size = new System.Drawing.Size(121, 21);
             this.LblPrecioT.TabIndex = 112;
@@ -94,7 +96,7 @@
             // 
             this.LblTctPrecio.AutoSize = true;
             this.LblTctPrecio.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTctPrecio.Location = new System.Drawing.Point(521, 302);
+            this.LblTctPrecio.Location = new System.Drawing.Point(521, 333);
             this.LblTctPrecio.Name = "LblTctPrecio";
             this.LblTctPrecio.Size = new System.Drawing.Size(121, 21);
             this.LblTctPrecio.TabIndex = 111;
@@ -151,7 +153,7 @@
             // 
             this.TxtBxPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.TxtBxPrecio.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBxPrecio.Location = new System.Drawing.Point(677, 260);
+            this.TxtBxPrecio.Location = new System.Drawing.Point(677, 291);
             this.TxtBxPrecio.Name = "TxtBxPrecio";
             this.TxtBxPrecio.Size = new System.Drawing.Size(115, 28);
             this.TxtBxPrecio.TabIndex = 106;
@@ -162,7 +164,7 @@
             this.LblTxtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.LblTxtPrecio.AutoSize = true;
             this.LblTxtPrecio.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTxtPrecio.Location = new System.Drawing.Point(494, 263);
+            this.LblTxtPrecio.Location = new System.Drawing.Point(494, 294);
             this.LblTxtPrecio.Name = "LblTxtPrecio";
             this.LblTxtPrecio.Size = new System.Drawing.Size(148, 21);
             this.LblTxtPrecio.TabIndex = 105;
@@ -172,7 +174,7 @@
             // 
             this.TxtBxCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.TxtBxCantidad.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBxCantidad.Location = new System.Drawing.Point(678, 217);
+            this.TxtBxCantidad.Location = new System.Drawing.Point(678, 248);
             this.TxtBxCantidad.Name = "TxtBxCantidad";
             this.TxtBxCantidad.Size = new System.Drawing.Size(116, 28);
             this.TxtBxCantidad.TabIndex = 104;
@@ -184,7 +186,7 @@
             this.LblTxtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.LblTxtCantidad.AutoSize = true;
             this.LblTxtCantidad.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTxtCantidad.Location = new System.Drawing.Point(555, 224);
+            this.LblTxtCantidad.Location = new System.Drawing.Point(555, 255);
             this.LblTxtCantidad.Name = "LblTxtCantidad";
             this.LblTxtCantidad.Size = new System.Drawing.Size(87, 21);
             this.LblTxtCantidad.TabIndex = 103;
@@ -369,12 +371,34 @@
             this.LblNombre.TabIndex = 118;
             this.LblNombre.Text = "Cédula ";
             // 
+            // LblCantS
+            // 
+            this.LblCantS.AutoSize = true;
+            this.LblCantS.Font = new System.Drawing.Font("Colonna MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCantS.Location = new System.Drawing.Point(689, 217);
+            this.LblCantS.Name = "LblCantS";
+            this.LblCantS.Size = new System.Drawing.Size(0, 17);
+            this.LblCantS.TabIndex = 122;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(471, 214);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(171, 21);
+            this.label5.TabIndex = 121;
+            this.label5.Text = "Cantidad de Salida";
+            // 
             // UniformesModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(852, 473);
+            this.Controls.Add(this.LblCantS);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -435,5 +459,7 @@
         public System.Windows.Forms.Label LblApellido;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label LblNombre;
+        public System.Windows.Forms.Label LblCantS;
+        private System.Windows.Forms.Label label5;
     }
 }

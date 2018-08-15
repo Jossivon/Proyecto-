@@ -68,22 +68,36 @@ namespace WinAppProyectoI
                 objModificar.LblPrecioT.Text = mats[0]["PrecioT"].ToString();
                 objModificar.LblNombre.Text = mats[0]["Nom"].ToString();
                 objModificar.LblApellido.Text = mats[0]["Apellido"].ToString();
+                objModificar.LblCantS.Text = mats[0]["CantidadS"].ToString();
             
-
                 if (objModificar.ShowDialog() == DialogResult.OK)
                 {
                     mats[0]["Nombre"] = objModificar.TxtBxNombre.Text;
                     mats[0]["Codigo"] = objModificar.LblCodigo.Text;
                     mats[0]["FechaI"] = objModificar.Date.Text;
-                    mats[0]["FechaS"] = objModificar.Date.Text;
                     mats[0]["NombreR"] = objModificar.TxtNombreR.Text;
                     mats[0]["Cantidad"] = objModificar.TxtBxCantidad.Text;
                     mats[0]["Precio"] = objModificar.TxtBxPrecio.Text;
                     mats[0]["Estado"] = objModificar.CmBxEstado.Text;
                     mats[0]["Talla"]= objModificar.CbxTalla.Text;
                     mats[0]["PrecioT"] = objModificar.LblPrecioT.Text;
-                    mats[0]["Nom"] = objModificar.LblNombre.Text;
-                    mats[0]["Apellido"] = objModificar.LblApellido.Text;
+
+                    if (objModificar.TxtNombreR.Text == "")
+                    {
+                        mats[0]["Nom"] = "";
+                        mats[0]["Apellido"] = "";
+                        mats[0]["FechaS"] = "";
+                    }
+                    else
+                    {
+                        mats[0]["FechaS"] = objModificar.datas.Text;
+                        mats[0]["Nom"] = objModificar.LblNombre.Text;
+                        mats[0]["Apellido"] = objModificar.LblApellido.Text;
+                    }
+
+
+
+
                     mats[0].AcceptChanges();
                     matSeg1.TblUniformes.WriteXml(Application.StartupPath + "\\ArchUniformes.xml");
                     MessageBox.Show("Se ha modificado con éxito el uniforme", "¡AVISO!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);

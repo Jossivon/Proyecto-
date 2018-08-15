@@ -45,6 +45,8 @@
             this.LblTitulo = new System.Windows.Forms.Label();
             this.CbxTalla = new System.Windows.Forms.ComboBox();
             this.matSeg1 = new WinAppProyectoI.MatSeg();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +108,7 @@
             this.BttGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BttGuardar.FlatAppearance.BorderSize = 3;
             this.BttGuardar.Font = new System.Drawing.Font("Colonna MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BttGuardar.Location = new System.Drawing.Point(455, 358);
+            this.BttGuardar.Location = new System.Drawing.Point(477, 355);
             this.BttGuardar.Name = "BttGuardar";
             this.BttGuardar.Size = new System.Drawing.Size(133, 57);
             this.BttGuardar.TabIndex = 91;
@@ -177,7 +179,7 @@
             this.CmBxEstado.Items.AddRange(new object[] {
             "Bueno",
             "Malo"});
-            this.CmBxEstado.Location = new System.Drawing.Point(186, 245);
+            this.CmBxEstado.Location = new System.Drawing.Point(344, 236);
             this.CmBxEstado.Name = "CmBxEstado";
             this.CmBxEstado.Size = new System.Drawing.Size(116, 29);
             this.CmBxEstado.TabIndex = 81;
@@ -233,7 +235,7 @@
             "42",
             "46",
             "48"});
-            this.CbxTalla.Location = new System.Drawing.Point(359, 245);
+            this.CbxTalla.Location = new System.Drawing.Point(344, 285);
             this.CbxTalla.Name = "CbxTalla";
             this.CbxTalla.Size = new System.Drawing.Size(116, 29);
             this.CbxTalla.TabIndex = 97;
@@ -245,12 +247,36 @@
             this.matSeg1.DataSetName = "MatSeg";
             this.matSeg1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(235, 293);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 21);
+            this.label1.TabIndex = 98;
+            this.label1.Text = "Talla";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(235, 244);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 21);
+            this.label2.TabIndex = 99;
+            this.label2.Text = "Estado";
+            // 
             // UniformesIngresar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(974, 490);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CbxTalla);
             this.Controls.Add(this.LblPrecioT);
             this.Controls.Add(this.LblTctPrecio);
@@ -294,5 +320,7 @@
         private System.Windows.Forms.Label LblTitulo;
         private System.Windows.Forms.ComboBox CbxTalla;
         private MatSeg matSeg1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

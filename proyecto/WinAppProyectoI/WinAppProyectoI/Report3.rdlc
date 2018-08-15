@@ -83,7 +83,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.112cm</Width>
+              <Width>2.45596cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.67979cm</Width>
@@ -106,7 +106,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.47312cm</Height>
+              <Height>1.36729cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -117,7 +117,22 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Cantidad</Value>
+                              <Value>Cantidad </Value>
+                              <Style>
+                                <FontFamily>Californian FB</FontFamily>
+                                <FontSize>14pt</FontSize>
+                                <FontWeight>ExtraBold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>en Bodega</Value>
                               <Style>
                                 <FontFamily>Californian FB</FontFamily>
                                 <FontSize>14pt</FontSize>
@@ -722,8 +737,8 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>5.55308cm</Top>
         <Left>3.43474cm</Left>
-        <Height>2.07312cm</Height>
-        <Width>19.13575cm</Width>
+        <Height>1.96729cm</Height>
+        <Width>19.47972cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>

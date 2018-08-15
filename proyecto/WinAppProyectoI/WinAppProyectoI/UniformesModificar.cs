@@ -12,7 +12,7 @@ namespace WinAppProyectoI
 {
     public partial class UniformesModificar : Form
     {
-        int cant,d,c;
+        int cant,d,c,cs;
         double precio, preciot,pr;
         string fecha,estado;
         public UniformesModificar()
@@ -69,8 +69,21 @@ namespace WinAppProyectoI
                 try
                 {
                     cant = int.Parse(TxtBxCantidad.Text);
+                    precio = double.Parse(TxtBxPrecio.Text);
                     if (cant > 0 && cant<1000)
                     {
+                        if (LblCantS.Text == "")
+                        {
+                            preciot = cant * precio;
+                        }
+                        else
+                        {
+                            cs = int.Parse(LblCantS.Text);
+                            cant = cant + cs;
+                        }
+                        preciot = cant * precio;
+                        LblPrecioT.Text = preciot.ToString();
+
                         TxtBxPrecio.Focus();
                     }
                     else
@@ -222,6 +235,13 @@ namespace WinAppProyectoI
 
         private void BttGuardar_Click(object sender, EventArgs e)
         {
+            if (TxtNombreR.Text == "")
+            {
+                LblNombre.Text = "";
+                LblApellido.Text = "";
+                datas.Text = "";
+            }
+
             this.DialogResult = DialogResult.OK; 
         }
     }

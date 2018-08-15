@@ -43,6 +43,7 @@ namespace WinAppProyectoI
                     oficina[0]["Cantidad"] = objModificar.LblC.Text;
                     oficina[0]["Nom"] = objModificar.LblNombre.Text;
                     oficina[0]["Apellido"] = objModificar.LblApellid.Text;
+                    oficina[0]["CantidadS"] = objModificar.TxtBxCantidad.Text;
                     oficina[0].AcceptChanges();
                     matSeg1.TblOficina.WriteXml(Application.StartupPath + "\\ArchOficina.xml");
                     MessageBox.Show("Se ha guardado con ÉXITO la salida del material de oficina", "¡AVISO!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);

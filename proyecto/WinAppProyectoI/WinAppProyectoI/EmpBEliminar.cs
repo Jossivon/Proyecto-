@@ -85,24 +85,30 @@ namespace WinAppProyectoI
                     MessageBox.Show( "Se ha eliminado el empleado", "¡AVISO!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                     TxtBxCedula.Text = "";
 
-                    
-                        if (ms.Length>0)
-                        {
+                    if (ms.Length>0)
+                    {
                             ms[0]["Cedula"] = "";
+                            ms[0]["Nombre"] = "";
+                            ms[0]["Apellido"] = "";
                             ms[0].AcceptChanges();
                             matSeg1.TblMatSeg.WriteXml(Application.StartupPath + "\\ArchMatSeg.xml");
-                        }
+                    }
 
-                        if (uni.Length > 0)
+
+                    if (uni.Length > 0)
                     {
-                        uni[0]["Cedula"] = "";
+                        uni[0]["NombreR"] = "";
+                        uni[0]["Nom"] = "";
+                        uni[0]["Apellido"] = "";
                         uni[0].AcceptChanges();
                         matSeg1.TblUniformes.WriteXml(Application.StartupPath + "\\ArchUniformes.xml");
                     }
 
-                        if (of.Length > 0)
+                    if (of.Length > 0)
                     {
-                        of[0]["Cedula"] = "";
+                        of[0]["NombreR"] = "";
+                        of[0]["Nom"] = "";
+                        of[0]["Apellido"] = "";
                         of[0].AcceptChanges();
                         matSeg1.TblOficina.WriteXml(Application.StartupPath + "\\ArchOficina.xml");
                     }

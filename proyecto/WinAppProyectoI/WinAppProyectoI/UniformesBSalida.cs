@@ -65,6 +65,7 @@ namespace WinAppProyectoI
                     oficina[0]["FechaS"] = objModificar.date.Text;
                     oficina[0]["NombreR"] = objModificar.TxtBxNombreUsuario.Text;
                     oficina[0]["Cantidad"] = objModificar.LblC.Text;
+                    oficina[0]["CantidadS"] = objModificar.TxtBxCantidad.Text;
                     oficina[0]["Nom"] = objModificar.LblNombre.Text;
                     oficina[0]["Apellido"] = objModificar.LblApellido.Text;
                     oficina[0].AcceptChanges();

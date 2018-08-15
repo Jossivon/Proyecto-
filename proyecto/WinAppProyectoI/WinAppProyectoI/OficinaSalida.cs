@@ -89,6 +89,8 @@ namespace WinAppProyectoI
             if (TxtBxNombreUsuario.Text == "")
             {
                 MessageBox.Show("campo de cédula vacio");
+                date.Text = "";
+                BttGuardar.Enabled = false;
                 TxtBxNombreUsuario.Focus();
                 a++;
             }
@@ -96,11 +98,16 @@ namespace WinAppProyectoI
             {
                 MessageBox.Show("la cantidad no se ha ingresado");
                 TxtBxCantidad.Focus();
+                BttGuardar.Enabled = false;
                 a++;
             }
             
-            if (a==0)
-            this.DialogResult = DialogResult.OK;
+            if (a == 0)
+            {
+                this.DialogResult = DialogResult.OK;
+                BttGuardar.Enabled = true;
+            }
+           
         }
 
         private void OficinaSalida_Load(object sender, EventArgs e)

@@ -15,7 +15,7 @@ namespace WinAppProyectoI
         int cant;
         double precio, preciot;
         string fecha;
-        int r, a;
+        int r, a, cs;
         public OficinaModificar()
         {
             InitializeComponent();
@@ -116,8 +116,21 @@ namespace WinAppProyectoI
                 try
                 {
                     cant = int.Parse(TxtBxCantidad.Text);
+                    precio = double.Parse(TxtBxPrecio.Text);
                     if (cant > 0 && cant<1000)
                     {
+                        if (LblCantS.Text == "")
+                        {
+                            preciot = cant * precio;
+                        }
+                        else
+                        {
+                            cs = int.Parse(LblCantS.Text);
+                            cant = cant + cs;
+                        }
+
+                        preciot = cant * precio;
+                        LblPrecioT.Text = preciot.ToString();
                         TxtBxPrecio.Focus();
                     }
                     else
@@ -137,6 +150,14 @@ namespace WinAppProyectoI
 
         private void BttGuardar_Click(object sender, EventArgs e)
         {
+            if (TxtBxNombreR.Text == "")
+            {
+                LblNombre.Text = "";
+                LblApellido.Text = "";
+                dates.Text = "";
+            }
+
+
             this.DialogResult = DialogResult.OK;
         }
 

@@ -410,6 +410,8 @@ namespace WinAppProyectoI {
             
             private global::System.Data.DataColumn columnApellido;
             
+            private global::System.Data.DataColumn columnCantidadS;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public TblMatSegDataTable() {
@@ -549,6 +551,14 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CantidadSColumn {
+                get {
+                    return this.columnCantidadS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -584,7 +594,7 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public TblMatSegRow AddTblMatSegRow(string NombreMat, string Marca, string Modelo, string FechaI, string FechaS, string Cedula, string Cantidad, string Precio, string Estado, string PrecioTotal, string Nombre, string Apellido) {
+            public TblMatSegRow AddTblMatSegRow(string NombreMat, string Marca, string Modelo, string FechaI, string FechaS, string Cedula, string Cantidad, string Precio, string Estado, string PrecioTotal, string Nombre, string Apellido, string CantidadS) {
                 TblMatSegRow rowTblMatSegRow = ((TblMatSegRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         NombreMat,
@@ -599,7 +609,8 @@ namespace WinAppProyectoI {
                         Estado,
                         PrecioTotal,
                         Nombre,
-                        Apellido};
+                        Apellido,
+                        CantidadS};
                 rowTblMatSegRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTblMatSegRow);
                 return rowTblMatSegRow;
@@ -635,6 +646,7 @@ namespace WinAppProyectoI {
                 this.columnPrecioTotal = base.Columns["PrecioTotal"];
                 this.columnNombre = base.Columns["Nombre"];
                 this.columnApellido = base.Columns["Apellido"];
+                this.columnCantidadS = base.Columns["CantidadS"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -666,6 +678,8 @@ namespace WinAppProyectoI {
                 base.Columns.Add(this.columnNombre);
                 this.columnApellido = new global::System.Data.DataColumn("Apellido", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnApellido);
+                this.columnCantidadS = new global::System.Data.DataColumn("CantidadS", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidadS);
                 this.columnCodigo.AutoIncrement = true;
                 this.columnCodigo.AutoIncrementSeed = 1;
             }
@@ -821,6 +835,8 @@ namespace WinAppProyectoI {
             
             private global::System.Data.DataColumn columnApellido;
             
+            private global::System.Data.DataColumn columnCantidadS;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public TblOficinaDataTable() {
@@ -936,6 +952,14 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CantidadSColumn {
+                get {
+                    return this.columnCantidadS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -971,7 +995,7 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public TblOficinaRow AddTblOficinaRow(string Nombre, string FechaI, string FechaS, string Cantidad, string Precio, string NombreR, string PrecioT, string Nom, string Apellido) {
+            public TblOficinaRow AddTblOficinaRow(string Nombre, string FechaI, string FechaS, string Cantidad, string Precio, string NombreR, string PrecioT, string Nom, string Apellido, string CantidadS) {
                 TblOficinaRow rowTblOficinaRow = ((TblOficinaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Nombre,
@@ -983,7 +1007,8 @@ namespace WinAppProyectoI {
                         NombreR,
                         PrecioT,
                         Nom,
-                        Apellido};
+                        Apellido,
+                        CantidadS};
                 rowTblOficinaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTblOficinaRow);
                 return rowTblOficinaRow;
@@ -1016,6 +1041,7 @@ namespace WinAppProyectoI {
                 this.columnPrecioT = base.Columns["PrecioT"];
                 this.columnNom = base.Columns["Nom"];
                 this.columnApellido = base.Columns["Apellido"];
+                this.columnCantidadS = base.Columns["CantidadS"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1041,6 +1067,8 @@ namespace WinAppProyectoI {
                 base.Columns.Add(this.columnNom);
                 this.columnApellido = new global::System.Data.DataColumn("Apellido", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnApellido);
+                this.columnCantidadS = new global::System.Data.DataColumn("CantidadS", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidadS);
                 this.columnCodigo.AutoIncrement = true;
                 this.columnCodigo.AutoIncrementSeed = 1;
             }
@@ -1200,6 +1228,8 @@ namespace WinAppProyectoI {
             
             private global::System.Data.DataColumn columnApellido;
             
+            private global::System.Data.DataColumn columnCantidadS;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public TblUniformesDataTable() {
@@ -1331,6 +1361,14 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CantidadSColumn {
+                get {
+                    return this.columnCantidadS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1366,7 +1404,7 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public TblUniformesRow AddTblUniformesRow(string Nombre, string Precio, string Cantidad, string Talla, string Estado, string NombreR, string FechaI, string FechaS, string PrecioT, string Nom, string Apellido) {
+            public TblUniformesRow AddTblUniformesRow(string Nombre, string Precio, string Cantidad, string Talla, string Estado, string NombreR, string FechaI, string FechaS, string PrecioT, string Nom, string Apellido, string CantidadS) {
                 TblUniformesRow rowTblUniformesRow = ((TblUniformesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Nombre,
@@ -1380,7 +1418,8 @@ namespace WinAppProyectoI {
                         FechaS,
                         PrecioT,
                         Nom,
-                        Apellido};
+                        Apellido,
+                        CantidadS};
                 rowTblUniformesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTblUniformesRow);
                 return rowTblUniformesRow;
@@ -1415,6 +1454,7 @@ namespace WinAppProyectoI {
                 this.columnPrecioT = base.Columns["PrecioT"];
                 this.columnNom = base.Columns["Nom"];
                 this.columnApellido = base.Columns["Apellido"];
+                this.columnCantidadS = base.Columns["CantidadS"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1444,6 +1484,8 @@ namespace WinAppProyectoI {
                 base.Columns.Add(this.columnNom);
                 this.columnApellido = new global::System.Data.DataColumn("Apellido", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnApellido);
+                this.columnCantidadS = new global::System.Data.DataColumn("CantidadS", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidadS);
                 this.columnCodigo.AutoIncrement = true;
                 this.columnCodigo.AutoIncrementSeed = 1;
             }
@@ -2183,6 +2225,22 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CantidadS {
+                get {
+                    try {
+                        return ((string)(this[this.tableTblMatSeg.CantidadSColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CantidadS\' de la tabla \'TblMatSeg\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTblMatSeg.CantidadSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsNombreMatNull() {
                 return this.IsNull(this.tableTblMatSeg.NombreMatColumn);
             }
@@ -2335,6 +2393,18 @@ namespace WinAppProyectoI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetApellidoNull() {
                 this[this.tableTblMatSeg.ApellidoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCantidadSNull() {
+                return this.IsNull(this.tableTblMatSeg.CantidadSColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCantidadSNull() {
+                this[this.tableTblMatSeg.CantidadSColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2514,6 +2584,22 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CantidadS {
+                get {
+                    try {
+                        return ((string)(this[this.tableTblOficina.CantidadSColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CantidadS\' de la tabla \'TblOficina\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTblOficina.CantidadSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsNombreNull() {
                 return this.IsNull(this.tableTblOficina.NombreColumn);
             }
@@ -2630,6 +2716,18 @@ namespace WinAppProyectoI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetApellidoNull() {
                 this[this.tableTblOficina.ApellidoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCantidadSNull() {
+                return this.IsNull(this.tableTblOficina.CantidadSColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCantidadSNull() {
+                this[this.tableTblOficina.CantidadSColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2841,6 +2939,22 @@ namespace WinAppProyectoI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string CantidadS {
+                get {
+                    try {
+                        return ((string)(this[this.tableTblUniformes.CantidadSColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CantidadS\' de la tabla \'TblUniformes\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTblUniformes.CantidadSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsNombreNull() {
                 return this.IsNull(this.tableTblUniformes.NombreColumn);
             }
@@ -2981,6 +3095,18 @@ namespace WinAppProyectoI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetApellidoNull() {
                 this[this.tableTblUniformes.ApellidoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCantidadSNull() {
+                return this.IsNull(this.tableTblUniformes.CantidadSColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCantidadSNull() {
+                this[this.tableTblUniformes.CantidadSColumn] = global::System.Convert.DBNull;
             }
         }
         

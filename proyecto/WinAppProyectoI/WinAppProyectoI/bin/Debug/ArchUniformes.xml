@@ -4,14 +4,14 @@
     <Nombre>Chaleco</Nombre>
     <Codigo>1</Codigo>
     <Precio>12</Precio>
-    <Cantidad>6</Cantidad>
+    <Cantidad>2</Cantidad>
     <Talla>34</Talla>
     <Estado>Malo</Estado>
-    <NombreR>1723117691</NombreR>
+    <NombreR />
     <FechaI>7/8/2018</FechaI>
-    <FechaS>7/8/2018</FechaS>
-    <PrecioT>72</PrecioT>
-    <Nom>Ivonne</Nom>
-    <Apellido>Barahona</Apellido>
+    <FechaS />
+    <PrecioT>24</PrecioT>
+    <Nom />
+    <Apellido />
   </TblUniformes>
 </MatSeg>

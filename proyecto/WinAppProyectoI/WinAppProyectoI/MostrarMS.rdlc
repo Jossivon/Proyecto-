@@ -27,6 +27,9 @@
               <Width>2.28833cm</Width>
             </TablixColumn>
             <TablixColumn>
+              <Width>2.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
               <Width>2.16257cm</Width>
             </TablixColumn>
             <TablixColumn>
@@ -289,7 +292,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Cantidad</Value>
+                              <Value>Cantidad en Bodega</Value>
                               <Style>
                                 <FontFamily>Californian FB</FontFamily>
                                 <FontSize>14pt</FontSize>
@@ -303,6 +306,46 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox31</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                          <Width>2pt</Width>
+                        </Border>
+                        <BottomBorder>
+                          <Width>2pt</Width>
+                        </BottomBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Cantidad salida</Value>
+                              <Style>
+                                <FontFamily>Californian FB</FontFamily>
+                                <FontSize>14pt</FontSize>
+                                <FontWeight>ExtraBold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -443,7 +486,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.67938cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -720,6 +763,45 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="CantidadS">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!CantidadS.Value</Value>
+                              <Style>
+                                <FontFamily>Californian FB</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>CantidadS</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                          <Width>1.5pt</Width>
+                        </Border>
+                        <BottomBorder>
+                          <Width>1.5pt</Width>
+                        </BottomBorder>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Precio">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -851,6 +933,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -864,10 +947,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>1.16099cm</Top>
-        <Left>1.05821cm</Left>
-        <Height>2.07312cm</Height>
-        <Width>23.02917cm</Width>
+        <Top>2.06202cm</Top>
+        <Left>0.25571cm</Left>
+        <Height>2.15249cm</Height>
+        <Width>25.52916cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -875,10 +958,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>3.95833in</Height>
+    <Height>2in</Height>
     <Style />
   </Body>
-  <Width>10.15497in</Width>
+  <Width>10.30777in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
@@ -920,7 +1003,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox4</rd:DefaultName>
           <Top>0.0791cm</Top>
-          <Left>3.69926cm</Left>
+          <Left>3.94621cm</Left>
           <Height>2.42563cm</Height>
           <Width>17.112cm</Width>
           <Style>
@@ -938,7 +1021,7 @@
           <Value>sello2</Value>
           <Sizing>FitProportional</Sizing>
           <Top>0.0791cm</Top>
-          <Left>0.40563cm</Left>
+          <Left>0.65258cm</Left>
           <Height>2.42563cm</Height>
           <Width>3.25835cm</Width>
           <ZIndex>1</ZIndex>
@@ -950,10 +1033,10 @@
         </Image>
         <Image Name="Image4">
           <Source>Embedded</Source>
-          <Value>sello4</Value>
+          <Value>sello5</Value>
           <Sizing>FitProportional</Sizing>
           <Top>0.04382cm</Top>
-          <Left>21.05821cm</Left>
+          <Left>21.30516cm</Left>
           <Height>2.4609cm</Height>
           <Width>3.10514cm</Width>
           <ZIndex>2</ZIndex>
@@ -977,10 +1060,10 @@
       <ReportItems>
         <Image Name="Image6">
           <Source>Embedded</Source>
-          <Value>sello4</Value>
+          <Value>sello5</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.30572cm</Top>
-          <Left>0.78843cm</Left>
+          <Top>0.30717cm</Top>
+          <Left>3.29363cm</Left>
           <Height>1.97625cm</Height>
           <Width>2.39232cm</Width>
           <Style>
@@ -1040,8 +1123,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.17639cm</Top>
-          <Left>5.5566cm</Left>
+          <Top>0.30717cm</Top>
+          <Left>6.05055cm</Left>
           <Height>1.97625cm</Height>
           <Width>13.26854cm</Width>
           <ZIndex>1</ZIndex>
@@ -1078,7 +1161,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>47a9318d-a4cd-4520-8d66-c2bf098705c4</rd:DataSourceID>
+      <rd:DataSourceID>84cd65e8-6cc9-4dbf-92e0-fb30f59b021c</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -1140,6 +1223,10 @@
           <DataField>Apellido</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CantidadS">
+          <DataField>CantidadS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>MatSeg</rd:DataSetName>
@@ -1166,7 +1253,7 @@ mxpwaiofnM8SRRD1QoGSPga2hrSKAxTazKEswrlwT+cSP7XcPWqpHh35bgr8rW1S3BSydqm89etR6NXu
 rgcFqqJ1hnH3cEeKh2yZ1hkGlxP2lFYYBncSuoj/HnLI4MGgkGeuBLjP2Zk4TJ40iVJ/aDUcPXqU1oXo3r170BH2D4AROHOPHgkqq6FnTzE1cFOIq2Hjxg0sZcAHioeHx7eogTxaIKisBvITVRKVIR6j1B9IDbq6OiSoAMaPH0/m2LnTE3ZAqUIYGhiQzz1cnJ0piceDU8ISzczMaJ3H6yX8NoZoCtwNtI3Hm2ZsHB8f37atAq3zeHBxOTk5EhLcwyMOxCnRCo9HnJKDgwOt83gip0TrPJ4F9/sXzIh3U1NTSuXxENSC8kNaA0FmZuaiSn8lQV+f/fKkK/fokeDr1kAiJUdHR9r2OcAasrOzq8UaMCPe58+fT6k/tDXExcVFREQ8fPgQMRJ8Ue/evWkzh6ysLA8P9jedBJ+zhg9qILPgRlmyxEJGRgat9erV09fTg5cjzACsAWr4j9Zgb/9TW0NlNYj7EMSmiJQQldI6j3f79q29e31ohVMDVolIidZ5PHV19o8pAGQKvJNqSkpKREQ4+c2slpYm5ebxkGd8XQ2tZKk10Prn1CBuDT+JU9LT06N1hkFCBIqiYntaZ5jg4KuHxPKG5s2bgwHWQOsI6rkUj6wc74CBgYGKigqcVd++fQ8eZJ9g9++vQbkZ5q9du4qLiiTFvnOflJQUIvYTCrk2bdBFPDwbyj33R5ZD6wyzfPkyUDAj3n9Ip1RZDWZmHxz9rFkzjx8/3qjRh0j8Pvu9uru0wn3H+/Dhw+KZwcwZMzAInYOTe9Kk32gbO+CsjPT0jh2VaZ1hzpw5A5527drROsPgYvDezX40T9CnD/tFWPHfm6iqqqanp2v0+5B8eHn9RSbF+w+phiFDBlORGWb0aPYvF96JiIA5U9LHQAZXVMR+eVs8gxWHtLTUgwcxYKAPM7iv+926eZM2c2gi9idHtLS0yLeJEZtREsMg/4J2aYX9lPsgGMDWX+ODDYkPoqykhJCX7DU4oWnawMYU
 +qCQpmoBRiOoNjUAkA9pJ+5AAhMTE1AwR3Bw8DBtbfF0FHfA9OnTExNfohU8cCOWS5e2acN+64IAzLq6urjbwUBHFwIUHHkNDQ0JsZ+ZtGzZEgF+bg77R1gJD/JEJSUl2syhS+fOvtwvJwhDRkaGkaFhUzEFYFJc+C+eP0er6AmrpaUlXY+sLFRSjToAMBFBdaoBKCgoyBOisLCQEMlMCQkJ5LPP27dviz7/w2oBUsYmkm96Xbt2TfTlYjLCJyBNiMFwtYA/LCzs1Sv2fycDkAGJ+qHd6OhoOKWLFy9Gsf+vGvr3kQgPx87+BvTWrVvcpMEJCeyfjAHQSiYCYK90PWIrqi6Q6YBqVAMrOx1ViPIK+mJ35WNUvP/Qihf7cVrNA5OIvz6Lr/Nw6/ygpCqCDlrN1gD5yvgVZUlVf5WXpvDTcpOSc5NScqr2yk1JySlJTi5NSnpX1VdiaSq/GnUAUCVUqxpwUt4K8roIsqUEOVV75UuVZbXpquUkJeci1cGpSi8lV7kOdg+byqdJN09s/EtVXi+lpFO69qh4WwwToSuuMqgSqlkN5UWCHHnBK0bwumqvXKY0Q7ptbzumiT3Tyq5KL1mHxi1toplmfKZeAtOgKq8XSEHaKpcXFX7/aigW5CoKXvME2VV75fFKs1ooaTjwZBx58g5Veik4yciteSDZMq1eo0SJxlV5veRJpCiplBcX1Yga6L//jzqEQPB/0XeMoUS+gDUAAAAASUVORK5CYII=</ImageData>
     </EmbeddedImage>
-    <EmbeddedImage Name="sello3">
+    <EmbeddedImage Name="sello4">
       <MIMEType>image/jpeg</MIMEType>
       <ImageData>/9j/4AAQSkZJRgABAQEAYABgAAD/4QBaRXhpZgAATU0AKgAAAAgABQMBAAUAAAABAAAASgMDAAEAAAABAAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOw1ESAAQAAAABAAAOwwAAAAAAAYagAACxj//bAEMAAgEBAgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwMDP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDP/AABEIAGwAfAMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP38ooooAKhv9Rt9KtGnup4baBMbpJXCIuTgZJ46kfnXlH7R
 H7angj9n2RNIn1jTdW8dagoXR/CdrcmXVtYkPmYSKCJZJT/qpcsIyB5bZ6V+bX7fP/BSbxv+0R8LLPXfgfc+L/EfjXwVqZi+IfwWg8/T7zSoZd1vFJPMILe9URXEcbjadrGYAjaVNAH6r/DT43+EvjI9/wD8Ir4i0TxCmmyeXcSabfw3aRtudMExs2Pmjcc45Ujsa/O/Xf8Ag4Ourz9onxZ8Orjwfofwdfw3PqdtaeIfiVfmy0vW5bScQqkJJh5fO84ZyFxwetdL/wAE5f2ivC/ww8P+AdN+HlhpHxCPxUYX+qt4X027jTwhE5luT9rmJuTJse5MW6Z42LROTyWVfX/2yP8AgmPoX7U/jfw7fN4V+En2XTr69u9RGseA7bVJdR89QAfN8+GRH3DcWBO49RQB4D/wU3/4Kt678FfhZ8GNe+H3iPwz4pl8Z3ctnrsvhyaTUbG3caebrEMkF0nO9RtD5JjYngjnX+Hn7dPjf4LfBD4x/HPxO3jHUfA3wu0uRT4c8QaPcaXqmqXm8eXJC8l5NF5BDIudm7O7GeAers/+Dfv4Wr8B7TwNP4o8beRaeJD4nhuobmMPZTmza0NvbCRZPItQjtiJTgfLknaK9g8Q/wDBNXRPiJ4d8UeHvGPjbxn4q8IeMtFk0TVvD8/2O1sJ0Zt6zhbeCNhcI2Csu4n5QOaAPm34Of8ABYf4reNfhveeIfEnhT4a+FdUsopbpfDOp3d5Yz6hGjqgSC5kyxkky2wfZSCVIycZr6e8U/8ABRXw58NfH3wi8K+KNF1Ow8RfGS7vbPSba1minW1e1OWaUyGJ9hXByiNgnGO9eBfGn/gjd4g8R/CTRfB+m/EIatpeja1Zak19eeHLWPxJe20V0LiWybVIZoHETkuvC5CNt5ArJ/a9+FfivwH/AMFGrP4kSfD/AFnxno/gbwC+n/C2whtpbyxg8Q3dy4uZJdqykS7NhDyeUAgIDdwAfoVpfirT9YvXtYLu2a8iQSSW
@@ -1180,7 +1267,7 @@ EfdAfyiS+SR6UAcT+0b/AMEm9Y+HX7W+hfGH4fvpV94f0W4sprzw7cLHAyiPKyGLASLnCYBx8zsTmv0H
 f7f3ww/Za8W2+g+L/Emm2OtXdul3FYNqFpFcvCxkAkEcsyMV/dP8wGPlPPBok+X4u9vmt0EPfV466X+Xf0PaKK8Y1z9v74VeH/2frT4l3Hi7Qx4XvpxawzDVLPLz7trQhjMIzIvJZQ+QAayfCv8AwUx+Dniv4deIPE6+MdEsdN8LyQJqYvNWsYntBM4SJn/flUVmO0FiMngZNDdr36b/AIf5r7wWtkuu39fJnvtFeW/s0ftlfD79rfTdQufBHiDTdW/suSOO4ihvraeSPzELxsRDI+FdQSpOMgEjivUqqUXHSQlJPY8w/bL+At9+05+zP4y8Dabq/wDYl94k0e+06C7O7ZG89rNApfbyVBkBOP7tfEn7Rvws+NOs/scfCr4caz8GLLQ9D+GOseG7vVvEGleJ7C48qDS5o981lat5TEvsG1WdCA7Z5GD+lVFY06UYVHUXWUJfOHw/maSm5RUZdFJL0nbm++y3vY/KP4V/8Ez/AI9/sx2f7QPhzRPC3hbx3o/xxPiGWw1iPxCunHR/7VMaRi4gljLMIkiDv5ZOS4VQcE175+xt/wAE+fHf7N/7aWn+J9RfSLzwppPgCDwul9DdYmubmO20qInySMqhazmwSegX14+4KK0bbcZSd2oqN/JRnFbW2U5frexKdudL7bbfq5Qk383Tj+Nj87da/wCCa3xW1b9iLW/CAXQG8T2nxBXxrYafPqJaz1iGHxDeakttLIFwhkiljwSpCyYz93Nel+OPg18WP2vv2pvgp4n8TfD3T/hfofwh1m71+e6l8QW+qXmptJbGBLaFYB8gJJLs5A2qAATX2PRVucnOM39lpr1UYxT77Qj5XW2rvDimp/3ua/pOUpSX3zl52e+itxXhjwl42074l3moap4p0K/8MywutvpkGiTwXULmTKM1w15JGwCfKQIFJPOQPlr8yPgl/wAEjvjj4O/aD+P0mpz+IdH8OfF/UtXbT7jQfGUMejQxXbXflz6hYFRJNIom
 TAQ5AyM8V+tlFc/sovR7crj8pWv59NzdVpLbupfOO3kfCv8AwT3/AGePjJ+zD+ydonwG8Q/C3wkbGxe9WfxVZ+IYX00pcTy3IlFr5QnMqGXYBtxujVtwHTxH9mX/AIJT/G/4J/AH4afBHU9H8MXuifD74k2/xAm8YW+tDydQhhVpfsaWjIJllaVvL3MdgA3Z7V+rFFdVavVq1pYipK85NOT01lGSnGVrWTUleystbNNWS51TgqPsEvdV7LtzJxa76p21u9mtT82v2w/+CY/xx/aa+IHjLxTouueFvC83h3TNKh8EWF0kt1Nf3FpdrqUh+0xzxiwElzHHExWOQsi7jzjDdG/ZO/aN8IfthfB740X/AIB0LxRqfhP4bW/hLX9NtPFkUMkt+n2pXlSWdMPGfMjbLHd856kc/pPRURqVFT9nzaXcumsmpKT2+1zNtbX2SLpRhTVox+zydfh92y36cqs9+7dz8ytJ/wCCcfxr8E/tMQftCW3hnwtquuXvjPVvENz8OhrawxWMF5prWKSJdtGYWu8kPKwUBlJAJNV/+CgX/BPD43/t/wCqeO/GsPg3w/4J1m88KaX4U0rQb7X4bmTVDDqy301xPcQqY0REysafMxbceARX6e0VlOnGUI03tDbyXLy2/wDAbrW71fla6dSUKzrx+J2v52k5r/yZ9Lfnf4b/AOCXP7BPxB/Yg8eazB4sEXja01zTNG8rxVqOri61fTnt7CSGWwbchZ4IZCEhKsF2St8owc/clFFdNavKq05dP82/1t+Lu7t81GhGkmo9f8kv0v8AgrKyX//Z</ImageData>
     </EmbeddedImage>
-    <EmbeddedImage Name="sello4">
+    <EmbeddedImage Name="sello5">
       <MIMEType>image/jpeg</MIMEType>
       <ImageData>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
@@ -1196,5 +1283,5 @@ TAQ5AyM8V+tlFc/sovR7crj8pWv59NzdVpLbupfOO3kfCv8AwT3/AGePjJ+zD+ydonwG8Q/C3wkbGxe9
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>804d2c3f-c3aa-4026-bdee-629c0a602a00</rd:ReportID>
+  <rd:ReportID>aec48bec-ad00-4b3f-b22c-a886fe53bce6</rd:ReportID>
 </Report>

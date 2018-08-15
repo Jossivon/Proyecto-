@@ -45,6 +45,7 @@ namespace WinAppProyectoI
                     mats[0]["Cantidad"] = objModificar.LblCanN.Text;
                     mats[0]["Nombre"] = objModificar.LblNombre.Text;
                     mats[0]["Apellido"] = objModificar.LblApellido.Text;
+                    mats[0]["CantidadS"] = objModificar.TxtBxCantidad.Text;
 
                     mats[0].AcceptChanges();
                     matSeg1.TblMatSeg.WriteXml(Application.StartupPath + "\\ArchMatSeg.xml");

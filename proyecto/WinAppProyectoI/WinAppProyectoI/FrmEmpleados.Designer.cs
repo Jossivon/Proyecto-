@@ -66,14 +66,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(50, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(866, 36);
+            this.panel2.Size = new System.Drawing.Size(758, 36);
             this.panel2.TabIndex = 1;
             // 
             // Restaurar
             // 
             this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
-            this.Restaurar.Location = new System.Drawing.Point(806, 6);
+            this.Restaurar.Location = new System.Drawing.Point(698, 6);
             this.Restaurar.Name = "Restaurar";
             this.Restaurar.Size = new System.Drawing.Size(25, 25);
             this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -86,7 +86,7 @@
             // 
             this.Mazimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Mazimizar.Image = ((System.Drawing.Image)(resources.GetObject("Mazimizar.Image")));
-            this.Mazimizar.Location = new System.Drawing.Point(806, 6);
+            this.Mazimizar.Location = new System.Drawing.Point(698, 6);
             this.Mazimizar.Name = "Mazimizar";
             this.Mazimizar.Size = new System.Drawing.Size(25, 25);
             this.Mazimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +109,7 @@
             // 
             this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
-            this.Cerrar.Location = new System.Drawing.Point(837, 6);
+            this.Cerrar.Location = new System.Drawing.Point(729, 6);
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.Size = new System.Drawing.Size(25, 25);
             this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -121,7 +121,7 @@
             // 
             this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(775, 6);
+            this.Minimizar.Location = new System.Drawing.Point(667, 6);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(25, 25);
             this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +137,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(50, 36);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(866, 455);
+            this.panel3.Size = new System.Drawing.Size(758, 455);
             this.panel3.TabIndex = 2;
             // 
             // pictureBox1
@@ -263,7 +263,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 491);
+            this.ClientSize = new System.Drawing.Size(808, 491);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PnlIzq);

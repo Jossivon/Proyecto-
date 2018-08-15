@@ -58,19 +58,21 @@
             this.Mazimizar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.Cerrar = new System.Windows.Forms.PictureBox();
-            this.matSeg1 = new WinAppProyectoI.MatSeg();
             this.CmbBxMarca = new System.Windows.Forms.ComboBox();
             this.LblApellido = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.matSeg1 = new WinAppProyectoI.MatSeg();
+            this.label3 = new System.Windows.Forms.Label();
+            this.LblCantS = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Mazimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).BeginInit();
             this.SuspendLayout();
             // 
             // DateS
@@ -128,7 +130,7 @@
             // 
             this.TxtBxPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.TxtBxPrecio.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBxPrecio.Location = new System.Drawing.Point(804, 323);
+            this.TxtBxPrecio.Location = new System.Drawing.Point(800, 341);
             this.TxtBxPrecio.Name = "TxtBxPrecio";
             this.TxtBxPrecio.Size = new System.Drawing.Size(115, 28);
             this.TxtBxPrecio.TabIndex = 90;
@@ -139,7 +141,7 @@
             this.LblTxtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.LblTxtPrecio.AutoSize = true;
             this.LblTxtPrecio.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTxtPrecio.Location = new System.Drawing.Point(613, 330);
+            this.LblTxtPrecio.Location = new System.Drawing.Point(613, 348);
             this.LblTxtPrecio.Name = "LblTxtPrecio";
             this.LblTxtPrecio.Size = new System.Drawing.Size(148, 21);
             this.LblTxtPrecio.TabIndex = 89;
@@ -149,7 +151,7 @@
             // 
             this.TxtBxCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.TxtBxCantidad.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBxCantidad.Location = new System.Drawing.Point(803, 269);
+            this.TxtBxCantidad.Location = new System.Drawing.Point(800, 297);
             this.TxtBxCantidad.Name = "TxtBxCantidad";
             this.TxtBxCantidad.Size = new System.Drawing.Size(116, 28);
             this.TxtBxCantidad.TabIndex = 88;
@@ -160,11 +162,11 @@
             this.LblTxtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.LblTxtCantidad.AutoSize = true;
             this.LblTxtCantidad.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTxtCantidad.Location = new System.Drawing.Point(678, 278);
+            this.LblTxtCantidad.Location = new System.Drawing.Point(577, 304);
             this.LblTxtCantidad.Name = "LblTxtCantidad";
-            this.LblTxtCantidad.Size = new System.Drawing.Size(87, 21);
+            this.LblTxtCantidad.Size = new System.Drawing.Size(184, 21);
             this.LblTxtCantidad.TabIndex = 87;
-            this.LblTxtCantidad.Text = "Cantidad";
+            this.LblTxtCantidad.Text = "Cantidad en Bodega";
             // 
             // TxtBxNombreUsuario
             // 
@@ -409,11 +411,6 @@
             this.Cerrar.TabStop = false;
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
-            // matSeg1
-            // 
-            this.matSeg1.DataSetName = "MatSeg";
-            this.matSeg1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // CmbBxMarca
             // 
             this.CmbBxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -473,12 +470,37 @@
             this.groupBox1.Controls.Add(this.TxtBxNombreUsuario);
             this.groupBox1.Controls.Add(this.LblTxtNomreUsuario);
             this.groupBox1.Font = new System.Drawing.Font("Colonna MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(543, 160);
+            this.groupBox1.Location = new System.Drawing.Point(537, 160);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(423, 99);
             this.groupBox1.TabIndex = 104;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del responsable";
+            // 
+            // matSeg1
+            // 
+            this.matSeg1.DataSetName = "MatSeg";
+            this.matSeg1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(583, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(171, 21);
+            this.label3.TabIndex = 105;
+            this.label3.Text = "Cantidad de Salida";
+            // 
+            // LblCantS
+            // 
+            this.LblCantS.AutoSize = true;
+            this.LblCantS.Font = new System.Drawing.Font("Colonna MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCantS.Location = new System.Drawing.Point(801, 265);
+            this.LblCantS.Name = "LblCantS";
+            this.LblCantS.Size = new System.Drawing.Size(0, 17);
+            this.LblCantS.TabIndex = 106;
             // 
             // MatSegModificar
             // 
@@ -486,6 +508,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(995, 518);
+            this.Controls.Add(this.LblCantS);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.CmbBxMarca);
             this.Controls.Add(this.panel1);
@@ -519,9 +543,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Mazimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -564,5 +588,7 @@
         public System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label LblCantS;
     }
 }

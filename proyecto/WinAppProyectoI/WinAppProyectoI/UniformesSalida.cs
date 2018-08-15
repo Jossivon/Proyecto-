@@ -13,7 +13,7 @@ namespace WinAppProyectoI
     public partial class UniformesSalida : Form
     {
         string fecha;
-        int cant, c;
+        int cant, c,a=0;
         int cantd;
         public UniformesSalida()
         {
@@ -83,7 +83,28 @@ namespace WinAppProyectoI
 
         private void BttGuardar_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
+            a = 0;
+            if (TxtBxNombreUsuario.Text == "")
+            {
+                MessageBox.Show("campo de cédula vacio");
+                date.Text = "";
+                BttGuardar.Enabled = false;
+                TxtBxNombreUsuario.Focus();
+                a++;
+            }
+            if (TxtBxCantidad.Text == "")
+            {
+                MessageBox.Show("la cantidad no se ha ingresado");
+                TxtBxCantidad.Focus();
+                BttGuardar.Enabled = false;
+                a++;
+            }
+
+            if (a == 0)
+            {
+                this.DialogResult = DialogResult.OK;
+                BttGuardar.Enabled = true;
+            }
         }
 
         private void TxtBxCantidad_KeyPress(object sender, KeyPressEventArgs e)

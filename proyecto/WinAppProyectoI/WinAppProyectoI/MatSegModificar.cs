@@ -14,7 +14,7 @@ namespace WinAppProyectoI
     {
         int codigo;
         int cont = 0;
-        int cant,r,a;
+        int cant,r,a,cs;
         string fecha, fechas, estado;
         double precio,preciot;
 
@@ -25,6 +25,13 @@ namespace WinAppProyectoI
 
         private void BttModificar_Click(object sender, EventArgs e)
         {
+            if (TxtBxNombreUsuario.Text == "")
+            {
+                LblNombre.Text = "";
+                LblApellido.Text = "";
+                DateS.Text = "";
+            }
+
             this.DialogResult = DialogResult.OK;
             this.Close();
 
@@ -223,8 +230,20 @@ namespace WinAppProyectoI
                 try
                 {
                     cant = int.Parse(TxtBxCantidad.Text);
+                    precio = double.Parse(TxtBxPrecio.Text);
                     if (cant > 0 && cant<1000)
                     {
+                        if (LblCantS.Text == "")
+                        {
+                            preciot = cant * precio;
+                        }
+                        else
+                        {
+                            cs = int.Parse(LblCantS.Text);
+                            cant = cant+cs;
+                        }
+                        preciot = cant * precio;
+                        LblPrecioT.Text = preciot.ToString();
                         TxtBxPrecio.Focus();
                     }
                     else
@@ -264,7 +283,7 @@ namespace WinAppProyectoI
                 }
                 catch
                 {
-                    MessageBox.Show("El precio debe ser un valor númerico", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("El precio debe ser un valor númerico positivo", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     TxtBxPrecio.Text = "";
                 }
             }

@@ -51,6 +51,8 @@
             this.LblApellido = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.LblCantS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.matSeg1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +62,7 @@
             this.LblPrecioT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.LblPrecioT.AutoSize = true;
             this.LblPrecioT.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPrecioT.Location = new System.Drawing.Point(686, 293);
+            this.LblPrecioT.Location = new System.Drawing.Point(686, 325);
             this.LblPrecioT.Name = "LblPrecioT";
             this.LblPrecioT.Size = new System.Drawing.Size(148, 21);
             this.LblPrecioT.TabIndex = 110;
@@ -71,7 +73,7 @@
             this.LblTxtPrecioT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.LblTxtPrecioT.AutoSize = true;
             this.LblTxtPrecioT.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTxtPrecioT.Location = new System.Drawing.Point(542, 293);
+            this.LblTxtPrecioT.Location = new System.Drawing.Point(542, 325);
             this.LblTxtPrecioT.Name = "LblTxtPrecioT";
             this.LblTxtPrecioT.Size = new System.Drawing.Size(121, 21);
             this.LblTxtPrecioT.TabIndex = 109;
@@ -112,7 +114,7 @@
             this.BttGuardar.Name = "BttGuardar";
             this.BttGuardar.Size = new System.Drawing.Size(133, 57);
             this.BttGuardar.TabIndex = 106;
-            this.BttGuardar.Text = "Guardar";
+            this.BttGuardar.Text = "Modificar";
             this.BttGuardar.UseVisualStyleBackColor = false;
             this.BttGuardar.Click += new System.EventHandler(this.BttGuardar_Click);
             // 
@@ -120,7 +122,7 @@
             // 
             this.TxtBxPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.TxtBxPrecio.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBxPrecio.Location = new System.Drawing.Point(690, 253);
+            this.TxtBxPrecio.Location = new System.Drawing.Point(690, 285);
             this.TxtBxPrecio.Name = "TxtBxPrecio";
             this.TxtBxPrecio.Size = new System.Drawing.Size(116, 28);
             this.TxtBxPrecio.TabIndex = 105;
@@ -131,7 +133,7 @@
             this.LblTxtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.LblTxtPrecio.AutoSize = true;
             this.LblTxtPrecio.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTxtPrecio.Location = new System.Drawing.Point(515, 253);
+            this.LblTxtPrecio.Location = new System.Drawing.Point(515, 285);
             this.LblTxtPrecio.Name = "LblTxtPrecio";
             this.LblTxtPrecio.Size = new System.Drawing.Size(148, 21);
             this.LblTxtPrecio.TabIndex = 104;
@@ -311,12 +313,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Personal Responsable";
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(115, 325);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(171, 21);
+            this.label3.TabIndex = 119;
+            this.label3.Text = "Cantidad de Salida";
+            // 
+            // LblCantS
+            // 
+            this.LblCantS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.LblCantS.AutoSize = true;
+            this.LblCantS.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCantS.Location = new System.Drawing.Point(300, 325);
+            this.LblCantS.Name = "LblCantS";
+            this.LblCantS.Size = new System.Drawing.Size(0, 21);
+            this.LblCantS.TabIndex = 120;
+            // 
             // OficinaModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(873, 466);
+            this.Controls.Add(this.LblCantS);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dates);
             this.Controls.Add(this.label1);
@@ -369,5 +394,7 @@
         public System.Windows.Forms.Label LblApellido;
         public System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label LblCantS;
     }
 }

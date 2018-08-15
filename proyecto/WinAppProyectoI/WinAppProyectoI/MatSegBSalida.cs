@@ -161,6 +161,15 @@ namespace WinAppProyectoI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (TxtBxCedula.Text == "")
+            {
+                MessageBox.Show("No se ha registrado ninguna salida del material");
+                DateS.Text = "";
+                TxtBxCantidad.Text = "";
+                this.Close();
+            }
+
+
             this.DialogResult = DialogResult.OK;
             
         }

@@ -6,14 +6,15 @@
     <Marca>Tisa</Marca>
     <Modelo>k-30</Modelo>
     <FechaI>7/8/2018</FechaI>
-    <FechaS>14/8/2018</FechaS>
-    <Cedula>1716174600</Cedula>
-    <Cantidad>5</Cantidad>
+    <FechaS />
+    <Cedula />
+    <Cantidad>3</Cantidad>
     <Precio>12</Precio>
-    <Estado />
-    <PrecioTotal>60</PrecioTotal>
+    <Estado>Bueno</Estado>
+    <PrecioTotal>48</PrecioTotal>
     <Nombre />
     <Apellido />
+    <CantidadS>1</CantidadS>
   </TblMatSeg>
   <TblMatSeg>
     <NombreMat>Revolver</NombreMat>
@@ -21,13 +22,45 @@
     <Marca>Tisa</Marca>
     <Modelo>f-34</Modelo>
     <FechaI>14/8/2018</FechaI>
-    <FechaS>14/8/2018</FechaS>
-    <Cedula>1723117691</Cedula>
-    <Cantidad>5</Cantidad>
+    <FechaS>15/8/2018</FechaS>
+    <Cedula>1715335475</Cedula>
+    <Cantidad>3</Cantidad>
+    <Precio>12</Precio>
+    <Estado>Bueno</Estado>
+    <PrecioTotal>60</PrecioTotal>
+    <Nombre>Cesar</Nombre>
+    <Apellido>Barahona</Apellido>
+    <CantidadS>2</CantidadS>
+  </TblMatSeg>
+  <TblMatSeg>
+    <NombreMat>Revolver</NombreMat>
+    <Codigo>3</Codigo>
+    <Marca>Taurus</Marca>
+    <Modelo>S-16</Modelo>
+    <FechaI>15/8/2018</FechaI>
+    <FechaS>15/8/2018</FechaS>
+    <Cedula>1715335475</Cedula>
+    <Cantidad>11</Cantidad>
     <Precio>12</Precio>
     <Estado />
-    <PrecioTotal>36</PrecioTotal>
-    <Nombre>Ivonne</Nombre>
+    <PrecioTotal>144</PrecioTotal>
+    <Nombre>Cesar</Nombre>
     <Apellido>Barahona</Apellido>
+    <CantidadS>1</CantidadS>
+  </TblMatSeg>
+  <TblMatSeg>
+    <NombreMat>Chaleco</NombreMat>
+    <Codigo>4</Codigo>
+    <Marca>Tisa</Marca>
+    <Modelo>k-30</Modelo>
+    <FechaI>15/8/2018</FechaI>
+    <FechaS>15/8/2018</FechaS>
+    <Cedula />
+    <Cantidad>6</Cantidad>
+    <Precio>12</Precio>
+    <Estado />
+    <PrecioTotal>72</PrecioTotal>
+    <Nombre />
+    <Apellido />
   </TblMatSeg>
 </MatSeg>

@@ -126,34 +126,33 @@ namespace WinAppProyectoI
                 oficina[5] = TxtBxPrecio.Text;
                 oficina[7] = LblPrecioT.Text;
 
+                System.Data.DataRow[] nombre;
+                nombre = matSeg1.TblOficina.Select("Nombre='" + TxtBxNombre.Text + "'"); 
 
-                LblTxtCodigo.Text = matSeg1.TblOficina.Rows.Count.ToString();
-                agregar = int.Parse(LblTxtCodigo.Text);
-                /*if (agregar == 99)
+                if (nombre.Length > 0)
                 {
-                    MessageBox.Show("Ya no se podran ingresar mas datos o se ELIMINAR todos ", "AVISO", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                    MessageBox.Show("El Material de Oficina ya existe solo se puede modificar", "ALERTA", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    this.Close();
                 }
-
-                */
-                agregar++;
-
-                LblTxtCodigo.Text = agregar.ToString();
-                OficinaCodigo mostrarCodigo = new OficinaCodigo();
-                mostrarCodigo.LblCodigo.Text = agregar.ToString();
-
-                matSeg1.TblOficina.Rows.Add(oficina);
-                matSeg1.WriteXml(Application.StartupPath + "\\ArchOficina.xml");
-                this.Hide();
-                mostrarCodigo.ShowDialog();
-                if (mostrarCodigo.DialogResult == DialogResult.OK)
+                else
                 {
-                    MessageBox.Show("Se ha guardado exitosamente", "AVISO", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                    LblTxtCodigo.Text = matSeg1.TblOficina.Rows.Count.ToString();
+                    agregar = int.Parse(LblTxtCodigo.Text);
+                    agregar++;
+                    LblTxtCodigo.Text = agregar.ToString();
+                    OficinaCodigo mostrarCodigo = new OficinaCodigo();
+                    mostrarCodigo.LblCodigo.Text = agregar.ToString();
+                    matSeg1.TblOficina.Rows.Add(oficina);
+                    matSeg1.WriteXml(Application.StartupPath + "\\ArchOficina.xml");
+                    this.Hide();
+                    mostrarCodigo.ShowDialog();
+                    if (mostrarCodigo.DialogResult == DialogResult.OK)
+                    {
+                        MessageBox.Show("Se ha guardado exitosamente", "AVISO", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
+                    }
                 }
-
 
             }
-
-
         }
 
         private void Restaurar_Click(object sender, EventArgs e)

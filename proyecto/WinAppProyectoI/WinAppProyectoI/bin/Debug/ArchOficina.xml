@@ -4,20 +4,24 @@
     <Nombre>Borrador</Nombre>
     <Codigo>1</Codigo>
     <FechaI>7/8/2018</FechaI>
+    <FechaS />
     <Cantidad>3</Cantidad>
     <Precio>12</Precio>
+    <NombreR />
     <PrecioT>36</PrecioT>
+    <Nom />
+    <Apellido />
   </TblOficina>
   <TblOficina>
     <Nombre>Esfero</Nombre>
     <Codigo>2</Codigo>
     <FechaI>7/8/2018</FechaI>
-    <FechaS>7/8/2018</FechaS>
+    <FechaS />
     <Cantidad>3</Cantidad>
     <Precio>2</Precio>
-    <NombreR>1723117691</NombreR>
+    <NombreR />
     <PrecioT>6</PrecioT>
-    <Nom>Ivonne</Nom>
-    <Apellido>Barahona</Apellido>
+    <Nom />
+    <Apellido />
   </TblOficina>
 </MatSeg>

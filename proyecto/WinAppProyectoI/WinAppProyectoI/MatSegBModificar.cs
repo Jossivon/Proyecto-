@@ -39,6 +39,7 @@ namespace WinAppProyectoI
                 objModificar.TxtBxCantidad.Text = mats[0]["Cantidad"].ToString();
                 objModificar.TxtBxPrecio.Text = mats[0]["Precio"].ToString();
                 objModificar.LblPrecioT.Text = mats[0]["PrecioTotal"].ToString();
+                objModificar.LblCantS.Text = mats[0]["CantidadS"].ToString();
 
                 if (objModificar.ShowDialog() == DialogResult.OK)
                 {
@@ -46,14 +47,25 @@ namespace WinAppProyectoI
                     mats[0]["Marca"] = objModificar.CmbBxMarca.Text;
                     mats[0]["Modelo"] = objModificar.TxtBxModelo.Text;
                     mats[0]["FechaI"] = objModificar.Date.Text;
-                    mats[0]["FechaS"] = objModificar.DateS.Text;
                     mats[0]["Cedula"] = objModificar.TxtBxNombreUsuario.Text;
                     mats[0]["Estado"] = objModificar.CmBxEstado.Text;
                     mats[0]["Cantidad"] = objModificar.TxtBxCantidad.Text;
                     mats[0]["Precio"] = objModificar.TxtBxPrecio.Text;
                     mats[0]["PrecioTotal"] = objModificar.LblPrecioT.Text;
-                    mats[0]["Nombre"] = objModificar.LblNombre.Text;
-                    mats[0]["Apellido"] = objModificar.LblApellido.Text;
+                    
+                    if (objModificar.TxtBxNombreUsuario.Text == "")
+                    {
+                        mats[0]["Nombre"] = "";
+                        mats[0]["Apellido"] = "";
+                        mats[0]["FechaS"] = "";
+                    }
+                    else
+                    {
+                        mats[0]["FechaS"] = objModificar.DateS.Text;
+                        mats[0]["Nombre"] = objModificar.LblNombre.Text;
+                        mats[0]["Apellido"] = objModificar.LblApellido.Text;
+                    }
+
                     mats[0].AcceptChanges();
                     matSeg1.TblMatSeg.WriteXml(Application.StartupPath + "\\ArchMatSeg.xml");
 
