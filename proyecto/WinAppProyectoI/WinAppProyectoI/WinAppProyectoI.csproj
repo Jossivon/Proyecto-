@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEAFEFED-7AFA-4801-92C1-F0CE5A821586}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinAppProyectoI</RootNamespace>
+    <AssemblyName>WinAppProyectoI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClCedula.cs" />
+    <Compile Include="EmpBEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpBEliminar.Designer.cs">
+      <DependentUpon>EmpBEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpBModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpBModificar.Designer.cs">
+      <DependentUpon>EmpBModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpBuscar.Designer.cs">
+      <DependentUpon>EmpBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpEliminar.Designer.cs">
+      <DependentUpon>EmpEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpIngresar.Designer.cs">
+      <DependentUpon>EmpIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpListaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpListaR.Designer.cs">
+      <DependentUpon>EmpListaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpModificar.Designer.cs">
+      <DependentUpon>EmpModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpMostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpMostrar.Designer.cs">
+      <DependentUpon>EmpMostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleados.Designer.cs">
+      <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSeg.cs">
+      <DependentUpon>MatSeg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegBEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegBEliminar.Designer.cs">
+      <DependentUpon>MatSegBEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegSalida.Designer.cs">
+      <DependentUpon>MatSegSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarMatSeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarMatSeg.Designer.cs">
+      <DependentUpon>MostrarMatSeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarOficina.Designer.cs">
+      <DependentUpon>MostrarOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarUniformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarUniformes.Designer.cs">
+      <DependentUpon>MostrarUniformes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaBEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaBEliminar.Designer.cs">
+      <DependentUpon>OficinaBEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegBModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegBModificar.Designer.cs">
+      <DependentUpon>MatSegBModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegBuscar.Designer.cs">
+      <DependentUpon>MatSegBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaBModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaBModificar.Designer.cs">
+      <DependentUpon>OficinaBModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaBSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaBSalida.Designer.cs">
+      <DependentUpon>OficinaBSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaBuscar.Designer.cs">
+      <DependentUpon>OficinaBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegCodigo.Designer.cs">
+      <DependentUpon>MatSegCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegBSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegBSalida.Designer.cs">
+      <DependentUpon>MatSegBSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegIngresar.Designer.cs">
+      <DependentUpon>MatSegIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaCodigo.Designer.cs">
+      <DependentUpon>OficinaCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaIngresar.Designer.cs">
+      <DependentUpon>OficinaIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMatSeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatSeg.Designer.cs">
+      <DependentUpon>FrmMatSeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUniforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUniforme.Designer.cs">
+      <DependentUpon>FrmUniforme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUtil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUtil.Designer.cs">
+      <DependentUpon>FrmUtil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaModificar.Designer.cs">
+      <DependentUpon>OficinaModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaSalida.Designer.cs">
+      <DependentUpon>OficinaSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSeg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatSeg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegModificar.Designer.cs">
+      <DependentUpon>MatSegModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegEliminar.Designer.cs">
+      <DependentUpon>MatSegEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaEliminar.Designer.cs">
+      <DependentUpon>OficinaEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatSegMostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatSegMostrar.Designer.cs">
+      <DependentUpon>MatSegMostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OficinaMostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OficinaMostrar.Designer.cs">
+      <DependentUpon>OficinaMostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteeUniFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteeUniFecha.Designer.cs">
+      <DependentUpon>ReporteeUniFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatSegCantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMatSegCantidad.Designer.cs">
+      <DependentUpon>ReporteMatSegCantidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatSegE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMatSegE.Designer.cs">
+      <DependentUpon>ReporteMatSegE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatSegFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMatSegFecha.Designer.cs">
+      <DependentUpon>ReporteMatSegFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteOfiantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteOfiantidad.Designer.cs">
+      <DependentUpon>ReporteOfiantidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteOfiEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteOfiEstado.Designer.cs">
+      <DependentUpon>ReporteOfiEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteOfiFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteOfiFecha.Designer.cs">
+      <DependentUpon>ReporteOfiFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteUniCantdad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteUniCantdad.Designer.cs">
+      <DependentUpon>ReporteUniCantdad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteuniEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteuniEstado.Designer.cs">
+      <DependentUpon>ReporteuniEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UniformeBBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformeBBuscar.Designer.cs">
+      <DependentUpon>UniformeBBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformeEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformeEliminar.Designer.cs">
+      <DependentUpon>UniformeEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesBEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesBEliminar.Designer.cs">
+      <DependentUpon>UniformesBEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesBModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesBModificar.Designer.cs">
+      <DependentUpon>UniformesBModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesBSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesBSalida.Designer.cs">
+      <DependentUpon>UniformesBSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesCodigo.Designer.cs">
+      <DependentUpon>UniformesCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesIngresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesIngresar.Designer.cs">
+      <DependentUpon>UniformesIngresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesModificar.Designer.cs">
+      <DependentUpon>UniformesModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesMostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesMostrar.Designer.cs">
+      <DependentUpon>UniformesMostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniformesSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniformesSalida.Designer.cs">
+      <DependentUpon>UniformesSalida.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EmpBEliminar.resx">
+      <DependentUpon>EmpBEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpBModificar.resx">
+      <DependentUpon>EmpBModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpBuscar.resx">
+      <DependentUpon>EmpBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpEliminar.resx">
+      <DependentUpon>EmpEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpIngresar.resx">
+      <DependentUpon>EmpIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpLista.rdlc" />
+    <EmbeddedResource Include="EmpListaR.resx">
+      <DependentUpon>EmpListaR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpModificar.resx">
+      <DependentUpon>EmpModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpMostrar.resx">
+      <DependentUpon>EmpMostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleados.resx">
+      <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSE.rdlc" />
+    <EmbeddedResource Include="MatSegBEliminar.resx">
+      <DependentUpon>MatSegBEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegSalida.resx">
+      <DependentUpon>MatSegSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarMatSeg.resx">
+      <DependentUpon>MostrarMatSeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarMS.rdlc" />
+    <EmbeddedResource Include="MostrarO.rdlc" />
+    <EmbeddedResource Include="MostrarOficina.resx">
+      <DependentUpon>MostrarOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarU.rdlc" />
+    <EmbeddedResource Include="MostrarUniformes.resx">
+      <DependentUpon>MostrarUniformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OEstado.rdlc" />
+    <EmbeddedResource Include="OFecha.rdlc" />
+    <EmbeddedResource Include="OficinaBEliminar.resx">
+      <DependentUpon>OficinaBEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegBModificar.resx">
+      <DependentUpon>MatSegBModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegBuscar.resx">
+      <DependentUpon>MatSegBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaBModificar.resx">
+      <DependentUpon>OficinaBModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaBSalida.resx">
+      <DependentUpon>OficinaBSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaBuscar.resx">
+      <DependentUpon>OficinaBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegCodigo.resx">
+      <DependentUpon>MatSegCodigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegBSalida.resx">
+      <DependentUpon>MatSegBSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegIngresar.resx">
+      <DependentUpon>MatSegIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaCodigo.resx">
+      <DependentUpon>OficinaCodigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaIngresar.resx">
+      <DependentUpon>OficinaIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatSeg.resx">
+      <DependentUpon>FrmMatSeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUniforme.resx">
+      <DependentUpon>FrmUniforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUtil.resx">
+      <DependentUpon>FrmUtil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaModificar.resx">
+      <DependentUpon>OficinaModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaSalida.resx">
+      <DependentUpon>OficinaSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegModificar.resx">
+      <DependentUpon>MatSegModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegEliminar.resx">
+      <DependentUpon>MatSegEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaEliminar.resx">
+      <DependentUpon>OficinaEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatSegMostrar.resx">
+      <DependentUpon>MatSegMostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OficinaMostrar.resx">
+      <DependentUpon>OficinaMostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPrecio.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="ReporteeUniFecha.resx">
+      <DependentUpon>ReporteeUniFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMatSegCantidad.resx">
+      <DependentUpon>ReporteMatSegCantidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMatSegE.resx">
+      <DependentUpon>ReporteMatSegE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMatSegFecha.resx">
+      <DependentUpon>ReporteMatSegFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteOfiantidad.resx">
+      <DependentUpon>ReporteOfiantidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteOfiEstado.resx">
+      <DependentUpon>ReporteOfiEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteOfiFecha.resx">
+      <DependentUpon>ReporteOfiFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteUniCantdad.resx">
+      <DependentUpon>ReporteUniCantdad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteuniEstado.resx">
+      <DependentUpon>ReporteuniEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniCant.rdlc" />
+    <EmbeddedResource Include="UniEstado.rdlc" />
+    <EmbeddedResource Include="UniFecha.rdlc" />
+    <EmbeddedResource Include="UniformeBBuscar.resx">
+      <DependentUpon>UniformeBBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformeEliminar.resx">
+      <DependentUpon>UniformeEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesBEliminar.resx">
+      <DependentUpon>UniformesBEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesBModificar.resx">
+      <DependentUpon>UniformesBModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesBSalida.resx">
+      <DependentUpon>UniformesBSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesCodigo.resx">
+      <DependentUpon>UniformesCodigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesIngresar.resx">
+      <DependentUpon>UniformesIngresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesModificar.resx">
+      <DependentUpon>UniformesModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesMostrar.resx">
+      <DependentUpon>UniformesMostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniformesSalida.resx">
+      <DependentUpon>UniformesSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MatSeg.xsc">
+      <DependentUpon>MatSeg.xsd</DependentUpon>
+    </None>
+    <None Include="MatSeg.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatSeg.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MatSeg.xss">
+      <DependentUpon>MatSeg.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Datos.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\proyectoI\menu.png" />
+    <None Include="bin\Debug\proyectoI\imagenes\cerrar rc.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

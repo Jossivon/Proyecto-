@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<MatSeg xmlns="http://tempuri.org/MatSeg.xsd">
+  <TblUniformes>
+    <Nombre>Chaleco</Nombre>
+    <Codigo>1</Codigo>
+    <Precio>12</Precio>
+    <Cantidad>6</Cantidad>
+    <Talla>34</Talla>
+    <Estado>Malo</Estado>
+    <NombreR>1723117691</NombreR>
+    <FechaI>7/8/2018</FechaI>
+    <FechaS>7/8/2018</FechaS>
+    <PrecioT>72</PrecioT>
+    <Nom>Ivonne</Nom>
+    <Apellido>Barahona</Apellido>
+  </TblUniformes>
+</MatSeg>
